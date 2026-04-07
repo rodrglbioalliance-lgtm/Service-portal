@@ -13,29 +13,14 @@
 
 
 
-<!-- ✅ STEP 1: Metadata section -->
-
-
- <div class="client-line no-print">
-  <h1>Preventive Maintenance Checklist</h1>
-  <label>Client Name</label><br>
-  <input type="text" id="client"
-         placeholder="e.g. Adventist Medical Center"
-         oninput="updateFilenamePreview()"
-         required><br><br>
-
-  <label>Machine</label><br>
-  <input type="text" id="machine"
-         value="Erma Tokyo EL-120"
-         readonly><br><br>
-
-  <p id="filenamePreview"
-     style="font-size:12px; color:#555; margin-top:6px;">
-  </p>
-  <p style="font-size:12px; color:#555; margin-top:6px;">
-     This will not be included on the PDF
-  </p>
+<div class="client-line no-print">
+  Client:
+  <input id="clientName" type="text" placeholder="Enter client name">
 </div>
+
+
+
+  <div class="content">
 
 
 
@@ -203,24 +188,31 @@
 
 
 
-<script>
-function sanitize(text) {
-  return text
-    .trim()
-    .replace(/\s+/g, '_')      // spaces → underscores
-    .replace(/[^a-zA-Z0-9_]/g, ''); // remove special chars
-}
+  <script>
+  // Set this per machine page:
+  const MACHINE_NAME = "Erma Tokyo EL-120"; // e.g. "SnibeM800", "GH900plus", "BC700"
 
-function updateFilenamePreview() {
-  const clientRaw = document.getElementById("client").value;
-  const machineRaw = document.getElementById("machine").value;
+  function sanitizeFilename(text) {
+    return (text || "")
+      .trim()
+      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
+      .replace(/\s+/g, " ")                   // collapse spaces
+      .slice(0, 120);                         // avoid super-long names
+  }
 
-  const client = sanitize(clientRaw || "Client");
-  const machine = sanitize(machineRaw);
+  function savePdfWithName() {
+    const clientRaw = document.getElementById("clientName").value;
+    const client = sanitizeFilename(clientRaw) || "Client";
+    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
 
-  document.getElementById("filenamePreview").innerText =
-    `PDF will be saved as: ${client}_${machine}.pdf`;
-}
+    const oldTitle = document.title;
+    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
+
+    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
+
+    // Restore title after opening print dialog
+    setTimeout(() => { document.title = oldTitle; }, 500);
+  }
 </script>
 
 

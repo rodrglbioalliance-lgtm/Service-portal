@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: auto;
+        background: white;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        width: 100%;
+        background: white;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    .header-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-left img {
+        height: 80px;
+    }
+    .header-right {
+        text-align: right;
+        font-family: Calibri;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+@page {
+    size: A4;
+    margin: 5mm;
+}
+
+.content {
+    transform: scale(0.9);
+    transform-origin: top center;
+}
+    table {
+        width: 80%;
+        font-size: 14px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: "Times New Roman", serif;
+        page-break-inside: avoid;
+    }
+    th, td {
+        border: 1px solid black;
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 2px 4px;
+        text-align: center;
+    }
+
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-weight: bold;
+    }
+    .header-main {
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+    input {
+        width: 90%;
+        border: none;
+        text-align: center;
+    }
+    .separator {
+        font-family: "Georgia", serif;
+        text-align: left;
+        width: 80%;
+        margin: 10px auto;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    /* Button styling */
+    .save-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #0078D7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Hide button when printing/exporting to PDF */
+    @media print {
+        .save-btn {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Normal Header -->
+<header>
+  <div class="header-wrapper">
+    <div class="header-left">
+        <!-- Replace 'logo.png' with your actual logo filename -->
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="header-right">
+        RGL BIO ALLIANCE CORPORATION<br>
+        79-A Apolonio St. corner General Araneta St.<br>
+        Project 4, Quezon City, 1109 Philippines<br>
+        T: +63 2 738 6411, +63 2 617 8892<br>
+        E: info@rglbioalliancecorp.com<br>
+        W: www.rglbioalliancecorp.com
+    </div>
+  </div>
+</header>
+
+<!-- First Table -->
+<table>
+    <tr>
+        <th colspan="7" class="header-main">Performance Qualification</th>
+    </tr>
+    <tr>
+        <td rowspan="6" class="vertical-text">Background</td>
+    <tr>
+        <th colspan="2">Classification/Result</th>
+        <th>Max</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Analysis</th>
+    </tr>
+
+    <tr>
+        
+        <th colspan="2">Background/Closed</th>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>Passed</b></td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Background/Open</th>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>Passed</b></td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Ref. Led on</th>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>Passed</b></td>
+    </tr>
+
+    <tr>
+	<th colspan="2">Background/Transport Position</th>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>Passed</b></td>
+    </tr>
+</table>
+
+<!-- Separator Text -->
+<div class="separator">
+<p>Background check is performed to ensure there is no light leakage in the chamber and the reference LED is at proper state.</p>
+
+The Background test required to have Background/Closed, Background/Open, and Background/Transport Position between 1 and 100, Ref. LED on 140,000 and 230,000
+</div>
+
+<!-- Separator Text -->
+<div class="separator">
+
+</div>
+
+<!-- Second Table -->
+<table>
+    <tr>
+        <th colspan="8" class="header-main">Performance Qualification</th>
+    </tr>
+	<tr>
+        <td rowspan="4" class="vertical-text">Plateau</td>
+    <tr>
+        <th>Classification/Repetition</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>4th</th>
+        <th>5th</th>
+        <th>Analysis</th>
+    </tr>
+    <tr>
+        <td>Mean Value</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>OK</b></td>
+    </tr>
+    <tr>
+	<td>Suggested D/A Highvolt</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>OK</b></td>
+    </tr>
+</table>
+
+<!-- Separator Text -->
+<div class="separator"><p>Plateau is performed to decide if we need to change D/A High Voltage for PMT and to check the performance of PMT.</p>
+
+The Plateau should have Mean Value Between 140,000 and 230,000, Suggested D/A Highvolt the difference between these values should be 5 or less.
+</div>
+<!-- Separator Text -->
+<div class="separator">
+
+</div>
+
+
+<!-- Third Table -->
+<table>
+    <tr>
+        <th colspan="10" class="header-main">Performance Qualification</th>
+    </tr>
+	<tr>
+        <td rowspan="3" class="vertical-text">Meas Cuvette</td>
+    <tr>
+        <th>Classification/Repetition</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>4th</th>
+        <th>5th</th>
+	<th>6th</th>
+        <th>CV</th>
+        <th>Analysis</th>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+	      <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>PASSED</b></td>
+    </tr>
+ 
+</table>
+
+<!-- Separator Text -->
+<div class="separator"><p>Measure Cuvette It is to test the background of the Starters and to check the performance of the whole chamber.</p>
+
+The Measure Cuvette Result should be between 100 and 1,200, CV should be Less than 10%
+
+</div>
+
+<!-- Separator Text -->
+<div class="separator">
+
+</div>
+
+<!-- fourth Table -->
+<table>
+    <tr>
+        <th colspan="4" class="header-main">Performance Qualification</th>
+    </tr>
+	<tr>
+        <td rowspan="2" class="vertical-text">BGW</td>
+    <tr>
+	<th>Classification/Repetition</th>
+        <th>RLU</th>
+        <th>CV</th>
+        <th>Analysis</th>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>PASSED</b></td>
+    </tr>
+    <tr>
+        <td rowspan="2" class="vertical-text">LC</td>
+    <tr>
+	<th>Classification/Repetition</th>
+        <th>RLU</th>
+        <th>CV</th>
+        <th>Analysis</th>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><b>PASSED</b></td>
+
+</table>
+
+
+<!-- Save as PDF Button -->
+<button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preventive Maintenance & Performance Verification Form</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+<div class="content">
+
+<!-- Header -->
+<header>
+  <div class="header-wrapper">
+    <div class="header-left">
+      <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="header-right">
+      RGL BIO ALLIANCE CORPORATION<br>
+      79-A Apolonio St. corner General Araneta St.<br>
+      Project 4, Quezon City, 1109 Philippines<br>
+      T: +63 2 738 6411 | E: info@rglbioalliancecorp.com
+    </div>
+  </div>
+</header>
+
+<!-- VISUAL & SAFETY -->
+<table>
+  <tr><th colspan="4" class="header-main">Visual and Safety Inspection</th></tr>
+  <tr>
+    <td rowspan="6" class="vertical-text">Visual</td>
+    <th>Item</th><th>Reference</th><th>Remarks</th>
+  </tr>
+  <tr><td>Covers & panels</td><td>Secure, no cracks</td><td><input></td></tr>
+  <tr><td>Power cord & grounding</td><td>No damage, grounded</td><td><input></td></tr>
+  <tr><td>Laser warning labels</td><td>Present & readable</td><td><input></td></tr>
+  <tr><td>Reagent & waste area</td><td>Clean, no leaks</td><td><input></td></tr>
+  <tr><td>Cooling fan</td><td>Operating normally</td><td><input></td></tr>
+</table>
+
+<!-- CORRECTIVE MAINTENANCE – CLEANING -->
+<table>
+  <tr><th colspan="4" class="header-main">Corrective Maintenance – Cleaning</th></tr>
+  <tr>
+    <td rowspan="7" class="vertical-text">CM</td>
+    <th>Component</th>
+    <th>Cleaning Performed</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Sample probe</td>
+    <td>External & internal cleaning performed</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Probe wipe assembly</td>
+    <td>Disassembled and cleaned</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>WBC bath</td>
+    <td>Cleaning cycle executed</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>RBC / PLT bath</td>
+    <td>Cleaning & zap performed</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Flow chamber</td>
+    <td>Flushed / decontaminated</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Waste line & pump</td>
+    <td>Checked and flushed</td>
+    <td><input></td>
+  </tr>
+</table>
+
+
+<!-- MECHANICAL -->
+<table>
+  <tr><th colspan="4" class="header-main">Mechanical Components</th></tr>
+  <tr>
+    <td rowspan="5" class="vertical-text">Mech</td>
+    <th>Item</th><th>Reference</th><th>Remarks</th>
+  </tr>
+  <tr><td>Sample probe</td><td>Straight, clean</td><td><input></td></tr>
+  <tr><td>Probe movement</td><td>Smooth X/Y/Z</td><td><input></td></tr>
+  <tr><td>Sampling motors</td><td>No abnormal noise</td><td><input></td></tr>
+  <tr><td>Doors & locks</td><td>Secure</td><td><input></td></tr>
+</table>
+
+<!-- FUNCTIONAL -->
+<table>
+  <tr><th colspan="4" class="header-main">Functional Verification After Maintenance</th></tr>
+  <tr>
+    <td rowspan="4" class="vertical-text">Func</td>
+    <th>Test</th><th>Reference</th><th>Remarks</th>
+  </tr>
+  
+  <tr><td>Startup</td><td>No errors</td><td><input></td></tr>
+  <tr><td>Background check</td><td>Within limits</td><td><input></td></tr>
+  <tr><td>System ready</td><td>Normal standby</td><td><input></td></tr>
+</table>
+
+<!-- TABLE 2: Background and Blank Counting -->
+    <table>
+      <tr>
+	<th colspan="5">Performance Qualification</th>
+</tr>
+        <td rowspan="5" class="vertical-text">
+           Background Testing 
+        </td>
+        <th>Description</th>
+        <th>Reference</th>
+        <th>Value</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        <td>WBC</td>
+        <td>≤ 0.1 × 10⁹ / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>RBC</td>
+        <td>≤ 0.02 × 10¹² / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>HGB</td>
+        <td>≤ 1 g / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>PLT</td>
+        <td>≤ 10 × 10⁹ / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+       
+      </tr>
+    </table>
+
+<!-- Remarks -->
+  <div class="separator">  
+</div>
+
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+</div>
+
+
+<button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+<!-- SCRIPTS -->
+<script>
+document.addEventListener("input", function (e) {
+
+  if (e.target.classList.contains("qc-measured")) {
+    const row = e.target.closest(".qc-row");
+    const min = parseFloat(row.querySelector(".qc-min").value);
+    const max = parseFloat(row.querySelector(".qc-max").value);
+    const val = parseFloat(e.target.value);
+    const res = row.querySelector(".qc-result");
+
+    if (isNaN(min) || isNaN(max) || isNaN(val)) {
+      res.innerHTML = "<b>—</b>";
+      res.style.color = "black";
+    } else if (val >= min && val <= max) {
+      res.innerHTML = "<b>PASSED</b>";
+      res.style.color = "green";
+    } else {
+      res.innerHTML = "<b>FAILED</b>";
+      res.style.color = "red";
+    }
+  }
+
+  if (e.target.classList.contains("opt-measured")) {
+    const row = e.target.closest(".optics-row");
+    const minEl = row.querySelector(".opt-min");
+    const maxEl = row.querySelector(".opt-max");
+    const val = parseFloat(e.target.value);
+    const res = row.querySelector(".opt-result");
+
+    const min = minEl ? parseFloat(minEl.value) : null;
+    const max = maxEl ? parseFloat(maxEl.value) : null;
+
+    if (isNaN(val)) {
+      res.innerHTML = "<b>—</b>";
+      res.style.color = "black";
+    } else if (
+      (min !== null && !isNaN(min) && val < min) ||
+      (max !== null && !isNaN(max) && val > max)
+    ) {
+      res.innerHTML = "<b>FAILED</b>";
+      res.style.color = "red";
+    } else {
+      res.innerHTML = "<b>PASSED</b>";
+      res.style.color = "green";
+    }
+  }
+});
+</script>
+
+</div>
+</body>
+</html>

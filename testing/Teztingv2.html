@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* Print setup for A4 */
+    @page {
+        size: A4;
+        margin: 20mm; /* adjust margins as needed */
+    }
+
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: auto;
+        background: white;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        font-family: Arial, sans-serif;
+    }
+
+    /* Fixed header styled like letterhead */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    .header-wrapper {
+        width: 80%; /* same width as tables */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-left {
+        text-align: left;
+    }
+    .header-left h1 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .header-left p {
+        margin: 0;
+        font-size: 14px;
+    }
+    .header-right {
+        text-align: right;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Content wrapper to avoid overlap with fixed header */
+    .content {
+        padding-top: 140px; /* space for header */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 80%;
+        font-size: 12px;
+        margin: 20px 0;
+        border-collapse: collapse;
+        font-family: "Times New Roman", serif;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-weight: bold;
+    }
+    .header-main {
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+    input {
+        width: 90%;
+        border: none;
+        text-align: center;
+    }
+    .separator {
+        width: 80%;
+        font-family: "Georgia", serif;
+        font-size: 9px;
+        font-weight: bold;
+        text-align: left;
+        margin: 10px 0;
+    }
+</style>
+</head>

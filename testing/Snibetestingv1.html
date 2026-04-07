@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Performance Qualification Certificate</title>
+  <style>
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: auto;
+        background: white;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        width: 100%;
+        background: white;
+        border-bottom: 2px solid black;
+        padding: 20px 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+    }
+    .header-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-left img { height: 80px; }
+    .header-right {
+        text-align: right;
+        font-family: Calibri;
+        font-size: 10px;
+        line-height: 1.4;
+    }
+    table {
+        width: 80%;
+        font-size: 14px;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: "Times New Roman", serif;
+    }
+    th, td {
+        border: 1px solid black;
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 2px 4px;
+        text-align: center;
+    }
+    .vertical-text {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-weight: bold;
+    }
+    .header-main { font-weight: bold; background-color: #f9f9f9; }
+    input { width: 90%; border: none; text-align: center; }
+    .separator {
+        font-family: "Georgia", serif;
+        text-align: left;
+        width: 80%;
+        margin: 10px auto;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .save-btn {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #0078D7;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-wrapper">
+    <div class="header-left">
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="header-right">
+        RGL BIO ALLIANCE CORPORATION<br>
+        79-A Apolonio St. corner General Araneta St.<br>
+        Project 4, Quezon City, 1109 Philippines<br>
+        T: +63 2 738 6411, +63 2 617 8892<br>
+        E: info@rglbioalliancecorp.com<br>
+        W: www.rglbioalliancecorp.com
+    </div>
+  </div>
+</header>
+
+<!-- Your tables here (unchanged) -->
+
+<button class="save-btn" onclick="generatePDF()">Generate Certificate PDF</button>
+
+<!-- jsPDF + AutoTable -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+<script>
+function generatePDF() {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ format: "a4" });
+
+  // Header
+  doc.setFontSize(14);
+  doc.text("RGL Bio Alliance Corporation", 20, 20);
+  doc.setFontSize(12);
+  doc.text("Performance Qualification Certificate", 20, 30);
+
+  const inputs = document.querySelectorAll("table input");
+
+  // Background table
+  doc.autoTable({
+    startY: 40,
+    head: [['Classification/Result','Max','Min','Mean','Analysis']],
+    body: [
+      ['Background/Closed', inputs[0].value, inputs[1].value, inputs[2].value, 'Passed'],
+      ['Background/Open', inputs[3].value, inputs[4].value, inputs[5].value, 'Passed'],
+      ['Ref. LED On', inputs[6].value, inputs[7].value, inputs[8].value, 'Passed'],
+      ['Background/Transport Position', inputs[9].value, inputs[10].value, inputs[11].value, 'Passed']
+    ],
+    theme: 'grid'
+  });
+
+  // Plateau table
+  doc.autoTable({
+    startY: doc.lastAutoTable.finalY + 10,
+    head: [['Classification/Repetition','1st','2nd','3rd','4th','5th','Analysis']],
+    body: [
+      ['Mean Value', inputs[12].value, inputs[13].value, inputs[14].value, inputs[15].value, inputs[16].value, 'OK'],
+      ['Suggested D/A Highvolt', inputs[17].value, inputs[18].value, inputs[19].value, inputs[20].value, inputs[21].value, 'OK']
+    ],
+    theme: 'grid'
+  });
+
+  // Measure Cuvette table
+  doc.autoTable({
+    startY: doc.lastAutoTable.finalY + 10,
+    head: [['Classification/Repetition','1st','2nd','3rd','4th','5th','6th','CV','Analysis']],
+    body: [
+      ['Result', inputs[22].value, inputs[23].value, inputs[24].value, inputs[25].value, inputs[26].value, inputs[27].value, inputs[28].value, 'PASSED']
+    ],
+    theme: 'grid'
+  });
+
+  // BGW & LC table
+  doc.autoTable({
+    startY: doc.lastAutoTable.finalY + 10,
+    head: [['Classification/Repetition','RLU','CV','Analysis']],
+    body: [
+      ['BGW Result', inputs[29].value, inputs[30].value, 'PASSED'],
+      ['LC Result', inputs[31].value, inputs[32].value, 'PASSED']
+    ],
+    theme: 'grid'
+  });
+
+  // Save PDF
+  doc.save("certificate.pdf");
+}
+</script>
+
+</body>
+</html>

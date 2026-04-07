@@ -1,0 +1,1542 @@
+[
+  {
+    "machine": "Snibe Maglumi 2000",
+    "concern": "Chamber transport not initialized",
+    "resolution": "Chamber lift error can be from full cuvette waste",
+    "remarks": NaN,
+    "date_received": "2025-10-27 09:15:16.129000"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "ESLOPE Ica",
+    "resolution": " iCa For Replacement",
+    "remarks": NaN,
+    "date_received": "2025-10-27 11:37:58.050000"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Ical Eslope ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-27 11:56:55.434000"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "High results",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-28 07:41:46.840000"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "High results",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-28 07:41:46.840000"
+  },
+  {
+    "machine": "Boule Medonic M32m",
+    "concern": "TE error",
+    "resolution": "possible stucked pinch tubing on its valves",
+    "remarks": "Found out that the last running of sample was Oct 22 then next is Oct 28 Client also experienced 1 or 2 days no running of samples, Inform the client to used the machine by running one background if there are no samples to prevent stuck pinch tubing on its valves",
+    "date_received": "2025-10-28 09:07:37"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Machine is lagging and unclickable & Unparalleled Result",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-28 18:19:37"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Expired calibration & Sample placement on the rack",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-28 18:22:37"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "Machine stock up",
+    "resolution": "screen hanging is caused by lack of thermal paper in printer assembly",
+    "remarks": NaN,
+    "date_received": "2025-10-29 07:14:40"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope Ica, Low slope values of Na & K (degraded)",
+    "resolution": "Low Slope values of ICA, NA and K",
+    "remarks": "For Replacement/requested eclectrodes",
+    "date_received": "2025-10-29 14:18:58"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Machine cant read/detect new rgt isepak",
+    "resolution": "not align IC Chip Metal Sensor",
+    "remarks": NaN,
+    "date_received": "2025-10-30 14:22:40"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope Na",
+    "resolution": "Replace IFS",
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Mindray Cal6000",
+    "concern": "New qc lot",
+    "resolution": "They updated the OS to win11 (not supported by Mindray softwares)",
+    "remarks": NaN,
+    "date_received": "2025-10-31 11:04:39"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "IC Chip not detected ",
+    "resolution": "Crashed Isechip",
+    "remarks": "Onsite Visit today",
+    "date_received": "10/31/ 2025 10:18:06"
+  },
+  {
+    "machine": "Mindray Cal6000",
+    "concern": "PC monitor restarting and can\u2019t access LabXpert software",
+    "resolution": "They updated the OS to win11 (not supported by Mindray softwares)",
+    "remarks": NaN,
+    "date_received": "2025-10-31 11:04:39"
+  },
+  {
+    "machine": "Mindray BS240 Pro",
+    "concern": "Uric acid and Mg QC2 out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-10-31 11:06:46"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Obstacle hit. Machine error.",
+    "resolution": "Loose probe",
+    "remarks": NaN,
+    "date_received": "2025-11-01 14:24:31.823000"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Lipotrol QC out of range ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-03 18:00:00"
+  },
+  {
+    "machine": "Boule Medonic M51",
+    "concern": "Abnormal Results. High WBC and Differential count",
+    "resolution": "Loose Fluidic Tubing from Lyse 1 that Causes abnormal Results especially on WBC",
+    "remarks": NaN,
+    "date_received": "2025-11-03 10:27:00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Fluctuation on results of Potassium",
+    "resolution": "Bubbles on Reference Electrode ",
+    "remarks": NaN,
+    "date_received": "2025-11-05 09:44:32"
+  },
+  {
+    "machine": "Mindray BC-30",
+    "concern": "Barcode error Lyse reagent",
+    "resolution": "invalid barcode possible not compatible with the machine ",
+    "remarks": " THE CURRENT REAGENTS ARE PURCHASED FROM OTHER SUPPLIER- Has 4 bottles of lyse available but all are invalid",
+    "date_received": "2025-11-05 10:50:30"
+  },
+  {
+    "machine": "Getein",
+    "concern": "SD Card cannot be read Upon opening new box- of reagent",
+    "resolution": "incompatible analyzer Unit version with delivered new box of kits (1100 machine, 1160 kits)",
+    "remarks": "to provide kits with the same version from that of machine",
+    "date_received": "2025-11-06 14:59:50"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Opto - Calib Failed",
+    "resolution": "Clogged in Opto Sensor",
+    "remarks": NaN,
+    "date_received": "2025-11-06 10:43:06"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope Ica",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-07 08:15:36"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope Ica",
+    "resolution": "Degraded ICA",
+    "remarks": "replacement of ICA",
+    "date_received": "2025-11-07 11:53:00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Chloride Eslope  ",
+    "resolution": NaN,
+    "remarks": "For replacement of cl electrode",
+    "date_received": "2025-11-07 12:05:21"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Pressure sensor block ",
+    "resolution": "Affected the pressure sensor due to the blocking of tubings",
+    "remarks": "Replaced pressure sensor and cleaning the tubings from distilled tank. For Schedule of yearly pms.",
+    "date_received": "2025-11-07 09:03:00"
+  },
+  {
+    "machine": "CXLPRO ",
+    "concern": "Cuvette stain",
+    "resolution": " Stained cuvettes ",
+    "remarks": NaN,
+    "date_received": "2025-11-08 06:23:25"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "Machine Error Hello po nag insert po ako bago IC card kase empty na po. Peeo ito po lumabas",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "11/09/2025- 8:07:12 PM"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Black Screen of Monitor ",
+    "resolution": "Disconnected HDMI Cable",
+    "remarks": NaN,
+    "date_received": "2025-11-10 10:26:32.244000"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "Washer peristaltic Pump error",
+    "resolution": "Possible the user replace the system liquid while ongoing running of samples ",
+    "remarks": NaN,
+    "date_received": "2025-11-10 10:28:31"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "Priming Error",
+    "resolution": "Ran out of consumables while primming & running sample ",
+    "remarks": NaN,
+    "date_received": "2025-11-10 20:01:00"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "Good evening, pa assist po! Changed system liquid already. Nag refill na din po ng cuvette pero ganito lang siya.Still Primming  ( Still long running)",
+    "resolution": "Ran out of consumables while primming & running sample ",
+    "remarks": NaN,
+    "date_received": "2025-11-10 20:01:00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Both machine - main and back up high in sodium result",
+    "resolution": "Fluctuation in Calibration results",
+    "remarks": "IFS replacement",
+    "date_received": "2025-11-11 07:08:00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Cl Eslope result",
+    "resolution": NaN,
+    "remarks": "For replacement of cl electrode",
+    "date_received": "2025-11-11 10:14:52.378000"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Results flags, Sample arm unable to move down",
+    "resolution": "No liquid detected by the probe on the reagent container (NT-pro BNp), ask user if they have new reagent (no stock of NTpro-BNP)",
+    "remarks": "Empty reagent",
+    "date_received": "11/10/2025 03/07/00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "All Result - Eslope",
+    "resolution": "Dettached electrodes in detection board",
+    "remarks": NaN,
+    "date_received": "2025-11-11 16:18:43"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope K Electrode *No Depro Available",
+    "resolution": "K electrode is busted",
+    "remarks": NaN,
+    "date_received": "2025-11-11 17:55:23"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope on Potassium ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "High result sodium Pot.",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-13 08:02:10.634000"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Fluctuation on results of Sodium",
+    "resolution": "Replace Sodium Electrode",
+    "remarks": NaN,
+    "date_received": "2025-11-13 18:48:03"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Anti-GAD and H.pylori QC results within range but all levels below 2SD ,",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-13 21:31:59"
+  },
+  {
+    "machine": "Boule Medonic M51",
+    "concern": "HGB Background voltage abnormal",
+    "resolution": "\u200bHGB gain out of range",
+    "remarks": NaN,
+    "date_received": "2025-11-15 08:33:54"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Configure Cal & qc - new lot number",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-14 15:34:14"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Low Sodium results; tritrol qc: all levels within range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-14 15:36:42.430000"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Hello good eve maam, from providence hospital lab po ito. Regarding Erma po kasi hindi nadedetect yung pack (isepack) maam. We tried po na ipasok ulit pati yung isepack from old erma pero both hindi na dedetect. Ano po kaya need gawin maam?",
+    "resolution": "Possible the reagent was not properly inserted on the machine.",
+    "remarks": NaN,
+    "date_received": "2025-11-14 22:07:08"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Failed calibration - IGF-1 II",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-14 23:22:18"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Machine including the computer is shut off without any intevention",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-14 23:22:18"
+  },
+  {
+    "machine": "Boule Medonic M51",
+    "concern": "HGB gain error",
+    "resolution": "\u200bHGB gain out of range",
+    "remarks": NaN,
+    "date_received": "2025-11-15 08:33:54"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Unparalleled result of Potassium ",
+    "resolution": " Calibration readings are declining for back up unit",
+    "remarks": NaN,
+    "date_received": "2025-11-15 10:09:41"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Could not load sample/Opto Calibration Error ",
+    "resolution": "Bubbles on the opto sensor",
+    "remarks": NaN,
+    "date_received": "2025-11-15 16:15:41"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Without result :Iron, D-Bill, Bill Ind",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-18 12:22:41"
+  },
+  {
+    "machine": "Boule Medonic M32m",
+    "concern": "Control Out of Range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-18 14:56:09"
+  },
+  {
+    "machine": "Boule Medonic M32m",
+    "concern": "Control Out of Range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-18 14:56:09"
+  },
+  {
+    "machine": "Cornley",
+    "concern": "Sodium Calibration Failed",
+    "resolution": "Degraded Na & k Electrodes",
+    "remarks": "Replace electrodes",
+    "date_received": "2025-11-18 15:38:04"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Could not load/eslope Na & k",
+    "resolution": "Bubbles within the fluids transport",
+    "remarks": "Flushing of Pathway",
+    "date_received": "11/18/2025 16:06:46 PM"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "Leak",
+    "resolution": "The liquid cannot travel through because the waste tube is twisted.",
+    "remarks": "For observation",
+    "date_received": "2025-11-18 09:21:00"
+  },
+  {
+    "machine": "Thermofisher Indiko plus",
+    "concern": "Blocked Valve",
+    "resolution": " Clogged on sample probe",
+    "remarks": NaN,
+    "date_received": "2025-11-18 09:21:00"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Opto calibration failed ",
+    "resolution": "Clogged Bottom Seal Adapter",
+    "remarks": "Cleaning of Pathway",
+    "date_received": "2025-11-18 21:27:38"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "Anti-GAD QC 1 and QC 2 Out of Range",
+    "resolution": "For continuous monitoring and further assessment. As per client, qc consistently going out of range week after loading new kit or troubleshooting.\n",
+    "remarks": NaN,
+    "date_received": "2025-11-19 10:55:23"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "QC Result - Inconsistent",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-19 15:46:03"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "QC Result - Inconsistent",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-19 15:46:03"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": " could not load sample. ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-20 08:28:10.164000"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Could not load deproteinizer",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-21 02:56:00"
+  },
+  {
+    "machine": "Urit 500-B",
+    "concern": "Urit fails to transmit data to LIS",
+    "resolution": "Need to connect the machine. Peer to peer to the LIS ",
+    "remarks": NaN,
+    "date_received": "2025-11-22 11:36:06"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "CK-MB qc out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-22 11:22:00"
+  },
+  {
+    "machine": "Mindray BS240 Pro",
+    "concern": "Machine Leakage",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-24 05:34:01"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "PC monitor not turning on / no display",
+    "resolution": "Defective Monitor",
+    "remarks": NaN,
+    "date_received": "2025-11-24 07:27:09"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope Cl and Ica",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-25 18:58:31.414000"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "Incubator loader unable to move forward",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-26 08:53:32.515000"
+  },
+  {
+    "machine": "AGAPPE CXL PRO",
+    "concern": "Abnormal CAN Bus of AC board",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-27 06:44:03"
+  },
+  {
+    "machine": "Snibe Maglumi 2000",
+    "concern": "Chamber lift not initialized (same concern yesterday)",
+    "resolution": "One Gear is misaligned",
+    "remarks": NaN,
+    "date_received": "2025-11-27 09:31:22"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "ICa no result",
+    "resolution": "Not Parallel",
+    "remarks": NaN,
+    "date_received": "2025-11-27 14:33:54"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Eslope on iCa",
+    "resolution": "Possible degrading iCa Electrode",
+    "remarks": NaN,
+    "date_received": "2025-11-28 06:09:09"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "H. pylori IgM QC out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-29 15:22:33"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Could not load Cal A",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-11-30 10:53:13"
+  },
+  {
+    "machine": "Mindray BS240 Pro",
+    "concern": "Machine Leaking ",
+    "resolution": "Waste Tank Full ",
+    "remarks": NaN,
+    "date_received": "2025-12-01 14:35:46"
+  },
+  {
+    "machine": "Erma Tokyo EL-120",
+    "concern": "Opto Calib / Cl Eslope",
+    "resolution": "Damaged membrane of CL Electrode",
+    "remarks": NaN,
+    "date_received": "2025-12-04 10:41:43"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Could not load sample",
+    "resolution": "possible small clogged on pathway ",
+    "remarks": NaN,
+    "date_received": "2025-12-09 08:13:00"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope Ica",
+    "resolution": "Degraded ICA",
+    "remarks": "Replacecment of Ica Electrode",
+    "date_received": "2025-12-09 09:32:04"
+  },
+  {
+    "machine": "M800",
+    "concern": "Good afternoon! Ayaw na po mag-on ng UPS ng snibe.",
+    "resolution": "Defective UPS",
+    "remarks": "Replacememt of Defective UPS",
+    "date_received": "2025-12-11 22:46:26"
+  },
+  {
+    "machine": "Maglumi",
+    "concern": "PC malfunction",
+    "resolution": "Power fluctuations causing the pc & machine shutdown",
+    "remarks": NaN,
+    "date_received": "2025-12-14 11:38:15"
+  },
+  {
+    "machine": "Snibe - X3",
+    "concern": "No Display on the Monitor ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "BS240Pro Mindray",
+    "concern": "Light intensity is too weak ",
+    "resolution": "busted lamp",
+    "remarks": NaN,
+    "date_received": "2025-12-15 09:34:55"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "Low Na results for Back-up unit",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-12-15 13:28:38"
+  },
+  {
+    "machine": "Mindray Bs240",
+    "concern": "Computer Monitor not function (Not Open)",
+    "resolution": "Defective PC Monitor",
+    "remarks": NaN,
+    "date_received": "2025-12-16 07:27:00"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Opto Calibration Failed ",
+    "resolution": "New reagent inserted",
+    "remarks": NaN,
+    "date_received": "2025-12-17 12:12:25"
+  },
+  {
+    "machine": "AGAPPE CXL",
+    "concern": "No results ",
+    "resolution": "result might be above measuring linearity of CXL pro (BUN)",
+    "remarks": NaN,
+    "date_received": "2025-12-17 16:16:39"
+  },
+  {
+    "machine": "EL120- Backup unit",
+    "concern": "Pack not detected @ 63% ",
+    "resolution": "Possible loosen ISEpak on its connection",
+    "remarks": NaN,
+    "date_received": "2025-12-22 00:31:16"
+  },
+  {
+    "machine": "Mindray BC30 Hematology Analyzer ",
+    "concern": "Machine error (Leak)",
+    "resolution": "Clogged in WBC Chamber Tubing",
+    "remarks": NaN,
+    "date_received": "2025-12-22 16:44:00"
+  },
+  {
+    "machine": "Erma Tokyo - EL120",
+    "concern": "Opto Calibration error",
+    "resolution": "Clogged on the seal adapter",
+    "remarks": NaN,
+    "date_received": "2025-12-23 13:01:10"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Hi sir.makikosuyo if may service engineer na available.nag eeslope na naman ang chloride ni ERMA..thanks",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-12-24 14:58:39.861000"
+  },
+  {
+    "machine": "Mindray BC30 ",
+    "concern": "Leak",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-01-25 01:42:35"
+  },
+  {
+    "machine": "Maglumi 800",
+    "concern": "Error Encountered",
+    "resolution": "stuck cuvette",
+    "remarks": NaN,
+    "date_received": "2025-12-29 14:57:21"
+  },
+  {
+    "machine": "Erma Tokyo EL120",
+    "concern": "Opto Calib Failed ",
+    "resolution": "clogged fluidic pathway and waste tubing",
+    "remarks": NaN,
+    "date_received": "2025-12-30 02:51:01.546000"
+  },
+  {
+    "machine": "Erma tokyo el120",
+    "concern": "CL ESLOPE ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "El120",
+    "concern": "Cl eslope",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-12-31 14:37:52"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Ica eslope",
+    "resolution": " ",
+    "remarks": "For replacement of ICA Electrode",
+    "date_received": "2026-01-02 15:09:18.305000"
+  },
+  {
+    "machine": "1. Mindray  2. Erma  EL120",
+    "concern": "Good morning po sir, kindly check the following machines.  1. Mindray - not transmitting 2. Erma - Chloride* Slope",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-03 08:00:49.830000"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Good morning po, nag eslope po ung back up na Sodium. nagpalit na po ng IFS at naglinis po ng clog ng tubings pero ayaw pa din po. nag oopto detector not calibrated po",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-04 07:31:13.107000"
+  },
+  {
+    "machine": "Mindray BS240",
+    "concern": "Leaking ",
+    "resolution": NaN,
+    "remarks": "For observation",
+    "date_received": "2026-01-05 09:51:56.512000"
+  },
+  {
+    "machine": "Thermofisher Indiko Plus",
+    "concern": "High Result of Bicarb Test ",
+    "resolution": NaN,
+    "remarks": "Not operational for bicarbonate test",
+    "date_received": "2026-01-05 08:56:44.681000"
+  },
+  {
+    "machine": "Erma Tokyo EL120 ",
+    "concern": "Machine 1 Eslope Ica Cl, Machine 2 QC result ",
+    "resolution": "Clogging on tubings",
+    "remarks": NaN,
+    "date_received": "2026-01-05 09:51:56.512000"
+  },
+  {
+    "machine": "Erma tokyo EL120",
+    "concern": "Eslope Ica and Cl",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-05 09:57:20"
+  },
+  {
+    "machine": "Lifotronic",
+    "concern": "sir May E1 na may lumalabas sa running ng result . tapos sir sa parallel testing  mababa lagi result ng hba1c nagen khit mataas ung results sa ibang machine ng diabetic patient namen",
+    "resolution": NaN,
+    "remarks": "PO concern",
+    "date_received": NaN
+  },
+  {
+    "machine": " Erma Tokyo",
+    "concern": "Nagproprompt po sya ng could not load sample.   Hindi po kami makapag daily maintenance, ERROR COULD NOT LOAD SAMPLE po ang nalabas.  Pinalitan na po namin yung IFS, wala naman pong bara sa mga tubings and nakakapag-prime din po kami.",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Indiko Basic",
+    "concern": "machine error",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2025-12-28 18:38:00"
+  },
+  {
+    "machine": "Maglumi 800",
+    "concern": "Back transport not initialized, Cuvette loader exit empty",
+    "resolution": "stucked cuvettes",
+    "remarks": NaN,
+    "date_received": "2026-01-01 04:51:00"
+  },
+  {
+    "machine": "Fluorecare ",
+    "concern": "Didn't open",
+    "resolution": " Defective Rocker Switch ",
+    "remarks": NaN,
+    "date_received": "2026-01-06 09:04:18.602000"
+  },
+  {
+    "machine": "CXL chemistry ",
+    "concern": "Cuvettes",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-07 10:17:43.606000"
+  },
+  {
+    "machine": "Lifotronic GH900",
+    "concern": "High pressure ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-07 13:32:32"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "Leak",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-09 08:55:46.483000"
+  },
+  {
+    "machine": "GH900",
+    "concern": "High and low pressure ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-10 07:31:48"
+  },
+  {
+    "machine": "Snibe M800",
+    "concern": "Starter 1 inject pump error",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-10 13:38:47"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "Eslope Ica",
+    "resolution": NaN,
+    "remarks": "For replacement of ICA Electrode",
+    "date_received": "2026-01-10 17:37:29"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Eslope on Sodium",
+    "resolution": "possible IFS deteriorates due to Na slope is near at lower limit",
+    "remarks": NaN,
+    "date_received": "2026-01-12 12:19:41"
+  },
+  {
+    "machine": "Erma Tokyo - EL120",
+    "concern": "Could not load sample ",
+    "resolution": "Fluidic Settings Adjustment",
+    "remarks": NaN,
+    "date_received": "2026-01-13 12:29:17"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Opto Calib failed",
+    "resolution": " almost empty reagent",
+    "remarks": NaN,
+    "date_received": "2026-01-14 07:31:15"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Could not load deproteinizer",
+    "resolution": "Gap on iCa and Cl electrode, defective Na electrode",
+    "remarks": NaN,
+    "date_received": "2026-01-14 10:25:45"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Could not load sample",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-15 07:11:08.033000"
+  },
+  {
+    "machine": "El 120",
+    "concern": "Sodium Eslope",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-15 11:14:51"
+  },
+  {
+    "machine": "el-120",
+    "concern": "ESLOPE (K,CL,CA)",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-16 10:08:53"
+  },
+  {
+    "machine": "Bs240",
+    "concern": "As per client, Naka red yung glucose urea alb kahit may reagent pa naman po",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-17 23:31:25"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Leaking/ Eslope all parameters ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-21 06:44:42"
+  },
+  {
+    "machine": "EL120",
+    "concern": "ICa - Eslope",
+    "resolution": " \u200bDefective Ica Electrode",
+    "remarks": NaN,
+    "date_received": "2026-01-21 13:52:15"
+  },
+  {
+    "machine": "EL120",
+    "concern": "K+ - Eslope",
+    "resolution": "\u200bDefective electrode",
+    "remarks": NaN,
+    "date_received": "2026-01-21 14:08:26"
+  },
+  {
+    "machine": "El120",
+    "concern": "Low results ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-21 15:26:41.417000"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Fluctuation of results ",
+    "resolution": NaN,
+    "remarks": "For replace electrode",
+    "date_received": "2025-01-21 21:51:14"
+  },
+  {
+    "machine": "Snibe X3",
+    "concern": "Machine temperature always high, needs electric fan to stabilized temp.",
+    "resolution": NaN,
+    "remarks": "Check the location only. No problem in the machine",
+    "date_received": "2026-01-22 12:03:54.021000"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "IGF-1 Qc2 out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-22 11:35:47"
+  },
+  {
+    "machine": "Thermo Fisher Indiko",
+    "concern": "Can't load the reagent ( Transferrin)",
+    "resolution": "Software Compatability Issue",
+    "remarks": NaN,
+    "date_received": "2026-01-24 08:52:49"
+  },
+  {
+    "machine": "Erma tokyo EL120",
+    "concern": "Opto calib faild",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-24 18:03:21"
+  },
+  {
+    "machine": "Erma tokyo",
+    "concern": "Waste tubing leak",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-24 20:43:39"
+  },
+  {
+    "machine": "El120",
+    "concern": "Invalid Isepak",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-27 07:07:16.382000"
+  },
+  {
+    "machine": "Erma Tokyo ",
+    "concern": "Invalid Isepak/ Eslope Sodium ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "H8",
+    "concern": "sir pa assist muna kami sana sa control",
+    "resolution": "The actual concern was the replacement of column",
+    "remarks": NaN,
+    "date_received": "2026-01-27 12:29:49"
+  },
+  {
+    "machine": "Snibe Maglumi X3",
+    "concern": "B2-M2 control level2 - out",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-28 17:27:02"
+  },
+  {
+    "machine": "Bs240",
+    "concern": "ALT reagent concern",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-28 11:37:23"
+  },
+  {
+    "machine": "Sysmex xn550",
+    "concern": "L-j error",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-29 07:25:41"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Opto-Calib Failed",
+    "resolution": "Clogged probe",
+    "remarks": NaN,
+    "date_received": "2026-01-29 12:31:35"
+  },
+  {
+    "machine": "Maglumi 800",
+    "concern": "FT4 QC: Out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-29 13:31:51"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "ICa Eslope",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-01-29 13:40:12"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope potassium ",
+    "resolution": "Degfraded electrode",
+    "remarks": NaN,
+    "date_received": "2026-01-29 20:20:00"
+  },
+  {
+    "machine": "Mndray",
+    "concern": "Barcode Scanner  malfunction",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-02 08:46:06"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Opto Calib failed  and could not load sample",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL 120",
+    "concern": "iCA - Eslope",
+    "resolution": "Defective Ica Electrode",
+    "remarks": NaN,
+    "date_received": "2026-02-04 12:10:58"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Could not load Depro",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Eslope iCa",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Indiko Plus",
+    "concern": "Error in Bias limit for Cholesterol calibration",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-09 07:59:00"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "Low result of Sodium",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-09 11:22:55"
+  },
+  {
+    "machine": "Maglumi X3",
+    "concern": "Patient result- 1st run: 35000pg/ml, 2nd: 63.51, 3rd: 60.09",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-10 11:04:43"
+  },
+  {
+    "machine": "El120",
+    "concern": "Isepack not read",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-10 13:11:13"
+  },
+  {
+    "machine": "Indiko plus",
+    "concern": "Urea result with errors",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-10 13:39:27"
+  },
+  {
+    "machine": "Mindray BS240 Pro",
+    "concern": "No result",
+    "resolution": "Computed Calib Curve",
+    "remarks": NaN,
+    "date_received": "2026-02-12 07:16:00"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope ionized",
+    "resolution": "defective ica",
+    "remarks": NaN,
+    "date_received": "2026-02-12 10:13:00"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope k",
+    "resolution": "For replacement of IFs",
+    "remarks": NaN,
+    "date_received": "2026-02-12 10:46:31"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope - Na, K, Cl, iCa",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-12 14:35:00"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "Could Not load Cal B",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-12 15:19:36"
+  },
+  {
+    "machine": "Bs240",
+    "concern": "Please see attached photo",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-15 11:33:58"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "coudn't load the sample",
+    "resolution": "clogged fluidic pathway ",
+    "remarks": NaN,
+    "date_received": "2026-02-16 10:22:57"
+  },
+  {
+    "machine": "Snibe Maglumi 800",
+    "concern": "nag fluctuate kuryente pero namamatay machine. Baka hindi gumagana UPS daw.",
+    "resolution": "Defective UPS battery",
+    "remarks": NaN,
+    "date_received": "2025-02-16 14:25:03"
+  },
+  {
+    "machine": "Mindray BS240 PRO",
+    "concern": "BOE (QC BUN)",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-17 03:07:42"
+  },
+  {
+    "machine": "El120",
+    "concern": "Calcium ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-17 14:49:55"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Eslope Na, K",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2/18/ 2026 14:46:24"
+  },
+  {
+    "machine": "Lifotronics",
+    "concern": "Mataas QC Results",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-21 08:45:11.676000"
+  },
+  {
+    "machine": "Cornley",
+    "concern": "CI eslope",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-02-21 09:46:49"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "cl eslope",
+    "resolution": "Replacement of IFS",
+    "remarks": NaN,
+    "date_received": "2026-02-21 13:09:56"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Opto Calib Failed",
+    "resolution": "Clogged pathway",
+    "remarks": NaN,
+    "date_received": "2026-02-23 22:56:00"
+  },
+  {
+    "machine": "Snibe M800",
+    "concern": "System test out of range",
+    "resolution": "dirty cuvettes",
+    "remarks": NaN,
+    "date_received": "2026-02-24 11:49:03.483000"
+  },
+  {
+    "machine": "Snibe 800",
+    "concern": "Me patient kasi kami na sobrang baba ng result ng TSH not correlated with other machine",
+    "resolution": "insufficient starter volume",
+    "remarks": NaN,
+    "date_received": "2/18/ 2026 9:32:21 AM"
+  },
+  {
+    "machine": "Maglumi",
+    "concern": "ayaw nanaman po pumasok ng system test po",
+    "resolution": "Replacement of cuvettes",
+    "remarks": NaN,
+    "date_received": "2026-02-26 16:05:40"
+  },
+  {
+    "machine": "Medonic M51",
+    "concern": "No diff count",
+    "resolution": NaN,
+    "remarks": "Results are accepted by MTOD",
+    "date_received": "2026-03-02 07:59:35"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Linearity low on Potassium- both machines",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-03 20:24:05"
+  },
+  {
+    "machine": "Lifotronic gh900",
+    "concern": "QC1 out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "03/0,/2026 07:44:03"
+  },
+  {
+    "machine": "Indiko plus",
+    "concern": "HDL calibration with errors; QC level 1 & 2 out of range",
+    "resolution": "2026-03-03 11:00:00",
+    "remarks": NaN,
+    "date_received": "2026-03-03 11:33:03"
+  },
+  {
+    "machine": "Audicom",
+    "concern": "Leaking tubings",
+    "resolution": " full waste",
+    "remarks": NaN,
+    "date_received": "2026-03-04 13:50:17.982000"
+  },
+  {
+    "machine": "Maglumi X3",
+    "concern": "Sample Arm Plunger is Unable to return to zero position ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-04 14:01:41"
+  },
+  {
+    "machine": "Lifotronic GH900",
+    "concern": "QC out of range",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-05 06:01:09"
+  },
+  {
+    "machine": "Maglumi X3",
+    "concern": "QC level 2 Microalbumin out",
+    "resolution": "\u200binsufficient qc material volume",
+    "remarks": " \u200bAdd more volume to qc material per level",
+    "date_received": "2026-03-06 08:22:15.694000"
+  },
+  {
+    "machine": "Erma Tokyo EL120",
+    "concern": "High Sample Results Cl / Fluctuating ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-06 10:05:34"
+  },
+  {
+    "machine": "Snibe x3",
+    "concern": "Morning po. Hindi p din po napasok yung calib for ANA.. ngpalit n po ako ng starters madami p pong rgt at system liquid",
+    "resolution": "Possible out of OVS reagent and QC, open last January 21, 2026",
+    "remarks": NaN,
+    "date_received": "2026-03-06 10:20:17.214000"
+  },
+  {
+    "machine": "EL120",
+    "concern": "for iCa electrode replacement",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-06 11:35:53.792000"
+  },
+  {
+    "machine": "Bs240",
+    "concern": "Please see attached photo ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-06 13:14:27"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "iCA Eslope result",
+    "resolution": NaN,
+    "remarks": "For replacement of ica",
+    "date_received": "2026-03-06 14:08:43"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Unparallel results of ica & Na",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-07 07:33:23"
+  },
+  {
+    "machine": "EL120 - Main",
+    "concern": "Opto calibration error ",
+    "resolution": " possible clogged fluidic pathway",
+    "remarks": NaN,
+    "date_received": "2026-03-08 17:28:14.770000"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope on Sodium",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-09 08:52:59.672000"
+  },
+  {
+    "machine": "Sysmex",
+    "concern": "Hand F-B motor error and mixing Error",
+    "resolution": "Sticky gripper",
+    "remarks": NaN,
+    "date_received": "2026-03-09 09:22:35.369000"
+  },
+  {
+    "machine": "GH900",
+    "concern": "Probe is broken",
+    "resolution": "bend probe",
+    "remarks": NaN,
+    "date_received": "2026-03-09 09:25:47.428000"
+  },
+  {
+    "machine": "Erma Tokyo EL 120",
+    "concern": "Opto Calib Failed",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-09 09:29:44.197000"
+  },
+  {
+    "machine": "El120",
+    "concern": "High Sodium Concern sodium concern Run daily maintenance  Aspirate depro Bubble calib",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-10 10:56:32.552000"
+  },
+  {
+    "machine": "Mindray bc760",
+    "concern": "Please see attached photo ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-10 23:31:29.519000"
+  },
+  {
+    "machine": "BS 240 Pro",
+    "concern": "\u201cLight intensity is weak- replace the lamp\u201d",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-11 15:46:57.108000"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Inconsistent results: K, Cl, iCa; for possible replacement of reference electrode",
+    "resolution": NaN,
+    "remarks": "Replace Electrode Last March 13, 2026",
+    "date_received": "2026-03-11 16:31:42.532000"
+  },
+  {
+    "machine": "EL- 120",
+    "concern": "iCa Eslope ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Maglumi ",
+    "concern": "May report lng sana ako ask ko lng h pylori igg undiluted greater than  So next is 1:5 onboard dilution  sa machine kaso greater than padin. Ano na po kaya next dilution natin?",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-14 14:44:25.038000"
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope ica ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-16 05:40:36.021000"
+  },
+  {
+    "machine": "Bs240",
+    "concern": "Please see attached photo ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Elevated iCa results",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-17 09:16:12.031000"
+  },
+  {
+    "machine": "Flourecare",
+    "concern": "Printer not working ",
+    "resolution": "loose printer roller",
+    "remarks": NaN,
+    "date_received": "2026-03-17 10:09:26"
+  },
+  {
+    "machine": "EL120 Main & Back up machine ",
+    "concern": "Eslope Na (Main), Eslope k (back up)",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-17 10:11:24.908000"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Good Afternoon po sir @Franc . Nag ccould not load cal A po kasi yung Main Erma po namin randomly. Kasi pag nag depro po kami and prime rgt. Nawawala po sya. Tapos bumabalik po.",
+    "resolution": "Clog in cal A tubings",
+    "remarks": NaN,
+    "date_received": "2026-03-18 13:36:11.353000"
+  },
+  {
+    "machine": "EL-120",
+    "concern": "High results",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Good afternoon, magpapa assist lang po sa Erma. Nag e-Eslope po yung Na+. Nag change na po ako ng IFC and naglinis ng tubings pero nag o-Opto Calib failed pa rin pp. Thank you.",
+    "resolution": "For activation of electrode",
+    "remarks": NaN,
+    "date_received": "2026-03-21 17:23:13"
+  },
+  {
+    "machine": "ERMA TOKYO EL- 120",
+    "concern": "Eslope ICA",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": "2026-03-25 09:19:07.171000"
+  },
+  {
+    "machine": "Mindray BS- 240Pro",
+    "concern": "Lamp is not turned on",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL120",
+    "concern": "Eslope ica",
+    "resolution": "replacement of ifs",
+    "remarks": NaN,
+    "date_received": "2026-03-25 09:38:49.967000"
+  },
+  {
+    "machine": "Snibe M800",
+    "concern": "System test out of range",
+    "resolution": "dusty cuvettes",
+    "remarks": NaN,
+    "date_received": "2026-03-25 09:39:57.304000"
+  },
+  {
+    "machine": "GH 900Plus",
+    "concern": "Bent probe",
+    "resolution": "bent probe",
+    "remarks": NaN,
+    "date_received": "2026-03-25 09:40:52.296000"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "High results on iCa of backup machine",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "SNIBE M800",
+    "concern": "Cuvette Concern",
+    "resolution": "Flipped cuvette",
+    "remarks": NaN,
+    "date_received": "2026-03-26 09:42:16.793000"
+  },
+  {
+    "machine": "EL 120",
+    "concern": "Electrolytes Concern- Decreased concerns",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Audicom ",
+    "concern": "Abnormal Result (not been used for a period of time)",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Mindray",
+    "concern": "penumatic status abnormal",
+    "resolution": "Low pressure of pnuematic pump, for further checking w/ allied engr",
+    "remarks": NaN,
+    "date_received": "2026-03-27 14:03:12.740000"
+  },
+  {
+    "machine": "MINDRAY BS240",
+    "concern": "Probe Collision Error ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Maglumi",
+    "concern": "full yung waste kahit walang laman",
+    "resolution": NaN,
+    "remarks": "Already resolved concern when engineer came",
+    "date_received": "2026-03-30 10:13:06.756000"
+  },
+  {
+    "machine": "Mindray ",
+    "concern": "neumatic error sir. Friday pa hindi nagagamit",
+    "resolution": "Low pressure given by pnuematic pump, for checking w/ allied engr.",
+    "remarks": NaN,
+    "date_received": "2026-03-31 08:35:49.383000"
+  },
+  {
+    "machine": "Mindray BS 240",
+    "concern": "High results on uric acid. ",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "EL 120",
+    "concern": " hindi po pumapasok yung control ng elec namin napalitan na po namin ng IFS pero hindi pa rin po pumapasok control",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  },
+  {
+    "machine": "Maglumi m800",
+    "concern": "Concern in CKMB- Please assist",
+    "resolution": NaN,
+    "remarks": NaN,
+    "date_received": NaN
+  }
+]

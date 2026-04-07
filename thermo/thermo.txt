@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Qualification Form</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+<div class="content">
+
+  <!-- Header -->
+  <header>
+    <div class="header-wrapper">
+      <div class="header-left">
+        <img src="logo.png" alt="Company Logo">
+      </div>
+      <div class="header-right">
+        RGL BIO ALLIANCE CORPORATION<br>
+        79-A Apolonio St. corner General Araneta St.<br>
+        Project 4, Quezon City, 1109 Philippines<br>
+        T: +63 2 738 6411, +63 2 617 8892<br>
+        E: info@rglbioalliancecorp.com<br>
+        W: www.rglbioalliancecorp.com
+      </div>
+    </div>
+  </header>
+
+
+<!-- TABLE 1: Visual & Safety Inspection -->
+<table>
+  <tr>
+    <th colspan="5" class="header-main">Visual and Safety Inspection</th>
+  </tr>
+  <tr>
+    <td rowspan="8" class="vertical-text">Visual</td>
+    <th>Item</th>
+    <th>Reference</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>External covers and panels</td>
+    <td>No cracks, secure, clean</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Power cable and plug</td>
+    <td>No damage, firmly connected</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Internal leaks</td>
+    <td>No reagent or water leakage</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Waste tubing</td>
+    <td>No blockage, properly routed</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Ventilation openings</td>
+    <td>Clean and unobstructed</td>
+    <td><input></td>
+  </tr>
+</table>
+
+<!-- TABLE 2: Fluid System -->
+<table>
+  <tr>
+    <th colspan="5" class="header-main">Fluid System Inspection</th>
+  </tr>
+  <tr>
+    <td rowspan="7" class="vertical-text">Fluid</td>
+    <th>Item</th>
+    <th>Reference</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>DI water container</td>
+    <td>Cleaned and rinsed</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Waste container</td>
+    <td>Emptied and cleaned</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Fluid tubing</td>
+    <td>No cracks, no discoloration</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Pump operation</td>
+    <td>Normal sound, stable operation</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Rinse cycles</td>
+    <td>Performed without alarms</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Waste flow</td>
+    <td>Free flow, no back pressure</td>
+    <td><input></td>
+  </tr>
+</table>
+
+<!-- TABLE 3: Optical System -->
+<table>
+  <tr>
+    <th colspan="5" class="header-main">Optical System</th>
+  </tr>
+  <tr>
+    <td rowspan="6" class="vertical-text">Optics</td>
+    <th>Item</th>
+    <th>Reference</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Photometer lamp</td>
+    <td>Stable, no error messages</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Optical path</td>
+    <td>Clean, no visible contamination</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Cuvette windows</td>
+    <td>Clean, no scratches</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Water blank</td>
+    <td>Within configured limits</td>
+    <td><input></td>
+  </tr>
+
+</table>
+
+<!-- TABLE 4: Mechanical Components -->
+<table>
+  <tr>
+    <th colspan="5" class="header-main">Mechanical Components</th>
+  </tr>
+  <tr>
+    <td rowspan="7" class="vertical-text">Mech</td>
+    <th>Item</th>
+    <th>Reference</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Sample probe</td>
+    <td>Clean, no bending</td>
+
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Probe movement</td>
+    <td>Smooth, no abnormal noise</td>
+
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Reaction rotor</td>
+    <td>Smooth rotation</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Cuvette transport</td>
+    <td>No jams or misalignment</td>
+
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Wash station</td>
+    <td>Proper alignment and spray</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Fans</td>
+    <td>Operating, no excessive noise</td>
+    <td><input></td>
+  </tr>
+</table>
+
+<!-- TABLE 6: Functional Check -->
+<table>
+  <tr>
+    <th colspan="5" class="header-main">Functional Verification After PM</th>
+  </tr>
+  <tr>
+    <td rowspan="5" class="vertical-text">Func</td>
+    <th>Test</th>
+    <th>Reference</th>
+    <th>Remarks</th>
+  </tr>
+  <tr>
+    <td>Start-up completed</td>
+    <td>No errors or alarms</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>Water blank</td>
+    <td>Within configured limit</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>QC / control run</td>
+    <td>Within acceptable range</td>
+    <td><input></td>
+  </tr>
+  <tr>
+    <td>System ready for operation</td>
+    <td>No pending warnings</td>
+    <td><input></td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <th colspan="7" class="header-main">Quality Control (QC) Acceptance Verification</th>
+  </tr>
+  <tr>
+    <td rowspan="9" class="vertical-text">QC</td>
+    <th>Level</th>
+    <th>Analyte</th>
+    <th>Target Value</th>
+    <th>Acceptance Range</th>
+    <th>Measured</th>
+    <th>Result</th>
+  </tr>
+
+  <tr class="qc-row">
+  <td>Level 1</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+<tr class="qc-row">
+  <td>Level 2</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+  <tr class="qc-row">
+  <td>Level 1</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+<tr class="qc-row">
+  <td>Level 2</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+  <tr class="qc-row">
+  <td>Level 1</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+<tr class="qc-row">
+  <td>Level 2</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+  <tr class="qc-row">
+  <td>Level 1</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+<tr class="qc-row">
+  <td>Level 2</td>
+  <td><input class="qc-analyte" placeholder="e.g. Glucose"></td>
+  <td><input type="number" class="qc-target"></td>
+  <td>
+    Min: <input type="number" class="qc-min" style="width:70px">
+    Max: <input type="number" class="qc-max" style="width:70px">
+  </td>
+  <td>
+    <input type="number" class="qc-measured">
+  </td>
+  <td class="qc-result"><b>—</b></td>
+</tr>
+</table>
+
+ <!-- Remarks -->
+  <div class="separator">  
+</div>
+
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+</div>
+
+  <button class="save-btn" onclick="window.print()">Save as PDF</button>
+  
+  <script>
+document.addEventListener("input", function (e) {
+  if (!e.target.classList.contains("qc-measured")) return;
+
+  const row = e.target.closest(".qc-row");
+  const min = parseFloat(row.querySelector(".qc-min")?.value);
+  const max = parseFloat(row.querySelector(".qc-max")?.value);
+  const measured = parseFloat(e.target.value);
+  const resultCell = row.querySelector(".qc-result");
+
+  if (isNaN(min) || isNaN(max) || isNaN(measured)) {
+    resultCell.innerHTML = "<b>—</b>";
+    resultCell.style.color = "black";
+    return;
+  }
+
+  if (measured >= min && measured <= max) {
+    resultCell.innerHTML = "<b>PASSED</b>";
+    resultCell.style.color = "green";
+  } else {
+    resultCell.innerHTML = "<b>FAILED</b>";
+    resultCell.style.color = "red";
+  }
+});
+</script>
+
+</body>

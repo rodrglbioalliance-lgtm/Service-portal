@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calibration and Preventive Maintenance Certificate</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: white;
+      color: #000;
+    }
+
+    .certificate {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+      border: 2px solid #000;
+      position: relative;
+    }
+
+    /* Watermark */
+    .watermark {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.06;
+      width: 350px;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 0;
+      font-weight: normal;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #000;
+      margin: 25px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    td {
+      padding: 6px;
+      vertical-align: top;
+    }
+
+    .label {
+      width: 25%;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin: 20px 0 8px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .statement {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .checkbox {
+      font-family: monospace;
+    }
+
+    .signature {
+      margin-top: 40px;
+    }
+
+    .signature-line {
+      border-top: 1px solid #000;
+      width: 280px;
+      margin-top: 40px;
+    }
+
+    .footer {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+      .certificate {
+        border: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<img src="logo.png" class="watermark" alt="Company Watermark">
+
+<div class="certificate">
+<div class="content">
+
+  <h1>CALIBRATION AND PREVENTIVE MAINTENANCE</h1>
+  <h2>CERTIFICATE</h2>
+
+  <hr>
+
+  <!-- CUSTOMER & CERTIFICATE INFO -->
+  <table>
+    <tr>
+      <td class="label">Customer:</td>
+      <td>{{Customer Name}}</td>
+      <td class="label">Certificate No.:</td>
+      <td>{{Certificate Number}}</td>
+    </tr>
+    <tr>
+      <td class="label">Address:</td>
+      <td>{{Address}}</td>
+      <td class="label">Date Issued:</td>
+      <td>{{Date Performed}}</td>
+    </tr>
+    <tr>
+      <td class="label">Next PM / Calibration Due:</td>
+      <td>{{Next Due Date}}</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- INSTRUMENT DETAILS -->
+  <div class="section-title">Instrument Details</div>
+
+  <table>
+    <tr>
+      <td class="label">Description:</td>
+      <td>{{Description}}</td>
+    </tr>
+    <tr>
+      <td class="label">Manufacturer:</td>
+      <td>{{Manufacturer}}</td>
+    </tr>
+    <tr>
+      <td class="label">Model:</td>
+      <td>{{Instrument Model}}</td>
+    </tr>
+    <tr>
+      <td class="label">Serial Number:</td>
+      <td>{{Serial Number}}</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- CERTIFICATION STATEMENT -->
+  <div class="section-title">Certification Statement</div>
+
+  <p class="statement">
+    This is to certify that the laboratory analyzer described herein has undergone
+    preventive maintenance and performance verification, and where applicable,
+    calibration procedures, in accordance with the manufacturer’s recommendations
+    and established internal procedures.
+  </p>
+
+  <p class="statement">
+    The equipment was found to be operating within acceptable performance limits
+    at the time of service and is deemed suitable for routine laboratory use.
+  </p>
+
+  <!-- CALIBRATION STATUS -->
+  <div class="section-title">Calibration Status</div>
+
+  <p class="statement checkbox">
+    [✔] Calibration performed and accepted &nbsp;&nbsp;
+    [ ] Calibration verified and valid &nbsp;&nbsp;
+    [ ] Not applicable (manufacturer-defined calibration)
+  </p>
+
+  <!-- QC STATEMENT -->
+  <div class="section-title">Quality Control Verification</div>
+
+  <p class="statement">
+    Quality control procedures were performed, and results were within the defined
+    acceptance criteria at the time of verification.
+  </p>
+
+  <!-- TRACEABILITY -->
+  <div class="section-title">Traceability</div>
+
+  <p class="statement">
+    This certificate is issued based on documented preventive maintenance and
+    performance verification records, which are retained and available for review
+    upon request.
+  </p>
+
+  <!-- LIMITATION -->
+  <div class="section-title">Validity and Limitation</div>
+
+  <p class="statement">
+    This certification reflects the condition of the equipment at the time of inspection
+    and service only. Subsequent performance may be affected by handling, environmental
+    conditions, consumables, or operational practices beyond the control of the service provider.
+  </p>
+
+  <!-- SIGNATURE -->
+  <div class="signature">
+    <table>
+      <tr>
+        <td>
+          <div class="signature-line"></div>
+          <strong>Performed by:</strong><br>
+          {{Engineer Name}}<br>
+          {{Position}}<br>
+          Date: {{Date Performed}}
+        </td>
+        <td></td>
+        <td>
+          <div class="signature-line"></div>
+          <strong>Authorized by:</strong><br>
+          RGL Bio Alliance Corporation
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    This certificate may not be reproduced in whole or in part without the written consent
+    of RGL Bio Alliance Corporation.
+  </div>
+
+</div>
+</div>
+
+</body>
+</html>
+``

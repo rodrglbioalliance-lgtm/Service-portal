@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Troubleshooting Knowledge Base</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    select, input, button {
+      padding: 8px;
+      width: 320px;
+      margin-bottom: 10px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Troubleshooting Search</h2>
+
+  <!-- Machine dropdown (AUTO) -->
+  <select id="machineSelect">
+    <option value="">-- Select Machine --</option>
+  </select>
+
+  <br>
+
+  <!-- Concern keyword -->
+  <input
+    type="text"
+    id="keywordInput"
+    placeholder="Type concern keyword (e.g. eslope, leak, calibration)"
+  >
+
+  <br>
+
+  <button onclick="searchData()">Search</button>
+
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

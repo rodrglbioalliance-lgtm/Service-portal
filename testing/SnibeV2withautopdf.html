@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Performance Qualification Certificate</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+  <h2>RGI Bio Alliance Corporation<br>Performance Qualification</h2>
+
+  <!-- Background Test -->
+  <h3>Background Test</h3>
+  <table>
+    <tr>
+      <td>Closed Max: <input type="number" name="bg_closed_max"></td>
+      <td>Closed Min: <input type="number" name="bg_closed_min"></td>
+      <td>Closed Mean: <input type="number" name="bg_closed_mean"></td>
+    </tr>
+    <tr>
+      <td>Open Max: <input type="number" name="bg_open_max"></td>
+      <td>Open Min: <input type="number" name="bg_open_min"></td>
+      <td>Open Mean: <input type="number" name="bg_open_mean"></td>
+    </tr>
+    <tr>
+      <td>Ref LED Max: <input type="number" name="led_on_max"></td>
+      <td>Ref LED Min: <input type="number" name="led_on_min"></td>
+      <td>Ref LED Mean: <input type="number" name="led_on_mean"></td>
+    </tr>
+  </table>
+
+  <button type="button" onclick="generatePDF()">Generate Certificate</button>
+
+  <script>
+    function generatePDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ format: "a4" });
+
+      // Header
+      doc.setFontSize(14);
+      doc.text("RGL Bio Alliance Corporation", 20, 20);
+      doc.setFontSize(12);
+      doc.text("Performance Qualification Certificate", 20, 30);
+
+      // Background Table
+      const bgClosedMax = document.querySelector('[name="bg_closed_max"]').value;
+      const bgClosedMin = document.querySelector('[name="bg_closed_min"]').value;
+      const bgClosedMean = document.querySelector('[name="bg_closed_mean"]').value;
+
+      const bgOpenMax = document.querySelector('[name="bg_open_max"]').value;
+      const bgOpenMin = document.querySelector('[name="bg_open_min"]').value;
+      const bgOpenMean = document.querySelector('[name="bg_open_mean"]').value;
+
+      const ledOnMax = document.querySelector('[name="led_on_max"]').value;
+      const ledOnMin = document.querySelector('[name="led_on_min"]').value;
+      const ledOnMean = document.querySelector('[name="led_on_mean"]').value;
+
+      doc.autoTable({
+        startY: 40,
+        head: [['Classification/Result', 'Max', 'Min', 'Mean', 'Analysis']],
+        body: [
+          ['Background/Closed', bgClosedMax, bgClosedMin, bgClosedMean, 'Passed'],
+          ['Background/Open', bgOpenMax, bgOpenMin, bgOpenMean, 'Passed'],
+          ['Ref. LED ON', ledOnMax, ledOnMin, ledOnMean, 'Passed']
+        ],
+        theme: 'grid'
+      });
+
+      // Notes
+      doc.setFontSize(10);
+      doc.text("Background check ensures no light leakage and proper LED state.", 20, doc.lastAutoTable.finalY + 10);
+
+      // Save PDF
+      doc.save("certificate.pdf");
+    }
+  </script>
+</body>
+</html>

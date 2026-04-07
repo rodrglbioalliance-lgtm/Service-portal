@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Qualification Form</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  
+</head>
+
+<body>
+  <div class="content">
+
+    <!-- Header -->
+    <header>
+      <div class="header-wrapper">
+        <div class="header-left">
+          <img src="logo.png" alt="Company Logo">
+        </div>
+        <div class="header-right">
+          RGL BIO ALLIANCE CORPORATION<br>
+          79-A Kalantiaw St. corner General Arellano St.<br>
+          Project 4, Quezon City, 1109 Philippines<br>
+          T: +63 2 738 6411, +63 2 617 8892<br>
+          E: info@rglbioalliancecorp.com<br>
+          W: www.rglbioalliancecorp.com
+        </div>
+      </div>
+    </header>
+
+
+<!-- VISUAL -->
+<table>
+<tr><th colspan="4" class="header-main">Visual & Safety Inspection</th></tr>
+<tr>
+  <td rowspan="6" class="vertical">Visual</td>
+  <th>Item</th><th>Acceptance Criteria</th><th>Remarks</th>
+</tr>
+<tr><td>Covers & housing</td><td>Secure, no cracks</td><td><input></td></tr>
+<tr><td>Power cord & grounding</td><td>Intact, grounded</td><td><input></td></tr>
+<tr><td>Laser / biohazard labels</td><td>Present & readable</td><td><input></td></tr>
+<tr><td>Reagent & waste area</td><td>No leaks or residue</td><td><input></td></tr>
+<tr><td>Ventilation / fan</td><td>Normal airflow</td><td><input></td></tr>
+</table>
+
+<!-- CLEANING -->
+<table>
+<tr><th colspan="4" class="header-main">Cleaning & Preventive Maintenance</th></tr>
+<tr>
+  <td rowspan="7" class="vertical">PM</td>
+  <th>Component</th><th>Action Performed</th><th>Remarks</th>
+</tr>
+<tr><td>Open tube probe</td><td>Alcohol wipe / flush</td><td><input></td></tr>
+<tr><td>Cap piercer / sampler needle</td><td>Cleaned / flushed (if applicable)</td><td><input></td></tr>
+<tr><td>Wash cup</td><td>Cleaned</td><td><input></td></tr>
+<tr><td>Mixing beaker</td><td>Cleaned & inspected</td><td><input></td></tr>
+<tr><td>Clot prevention cycle</td><td>Performed</td><td><input></td></tr>
+<tr><td>Six‑month cleaning</td><td>Completed / N.A.</td><td><input></td></tr>
+</table>
+
+<!-- FLUIDICS -->
+<table>
+<tr><th colspan="5" class="header-main">Fluidics & Pumps Verification</th></tr>
+<tr>
+  <td rowspan="5" class="vertical">Fluidics</td>
+  <th>Check</th><th>Acceptance Criteria</th><th>Result</th><th>Remarks</th>
+</tr>
+<tr>
+  <td>Aspiration (OT / CT)</td>
+  <td>Smooth, no air bubbles</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+<tr>
+  <td>Vacuum pump (P‑)</td>
+  <td>Stable operation</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+<tr>
+  <td>Pressure pump (P+)</td>
+  <td>Normal pressure build‑up</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+<tr>
+  <td>Shear valve movement</td>
+  <td>Moves freely, no errors</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+</table>
+
+<!-- OPTICS -->
+<table>
+<tr><th colspan="5" class="header-main">Optical & Measurement System</th></tr>
+<tr>
+  <td rowspan="4" class="vertical">Optics</td>
+  <th>Check</th><th>Acceptance Criteria</th><th>Result</th><th>Remarks</th>
+</tr>
+<tr>
+  <td>HGB photometer</td>
+  <td>Stable readings, no HL / HH flags</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+<tr>
+  <td>WBC / RBC noise level</td>
+  <td>Low noise, stable baseline</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+<tr>
+  <td>Histograms</td>
+  <td>Normal shape, no excessive noise</td>
+  <td class="result"><input placeholder="PASS / FAIL"></td>
+  <td><input></td>
+</tr>
+</table>
+
+<!-- FUNCTIONAL -->
+<table>
+<tr><th colspan="4" class="header-main">Functional Checks</th></tr>
+<tr>
+  <td rowspan="4" class="vertical">Func</td>
+  <th>Test</th><th>Acceptance</th><th>Remarks</th>
+</tr>
+<tr><td>Startup & initialization</td><td>No error messages</td><td><input></td></tr>
+<tr><td>Background count</td><td>Within manufacturer limits</td><td><input></td></tr>
+<tr><td>Ready / standby mode</td><td>Normal operation</td><td><input></td></tr>
+</table>
+
+
+    <!-- TABLE 1: Analyzer Status -->
+    <table>
+      <tr>
+	<th colspan="5">Performance Verification</th>
+	</tr>
+        <td rowspan="8" class="vertical-text">Analyzer Status</td>
+        <th>Description</th>
+        <th>Reference</th>
+        <th>Result</th>
+        <th>Remarks</th>
+      </tr>
+
+      <tr>
+        <td>HGB Gain</td>
+        <td>3200 ~ 3800</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+      <tr>
+        <td>RBC Offset</td>
+        <td>-0.05 mV ~ 0.05 mV</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+      <tr>
+        <td>WBC Offset</td>
+        <td>-0.05 mV ~ 0.05 mV</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+      <tr>
+        <td>Ambient Temperature</td>
+        <td>10 ~ 35 °C</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+    </table>
+
+    <!-- TABLE 2: Background and Blank Counting -->
+    <table>
+      <tr>
+	<th colspan="5">Performance Qualification</th>
+</tr>
+        <td rowspan="5" class="vertical-text">
+           Background Testing 
+        </td>
+        <th>Description</th>
+        <th>Reference</th>
+        <th>Value</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        <td>WBC</td>
+        <td>≤ 0.1 × 10⁹ / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>RBC</td>
+        <td>≤ 0.02 × 10¹² / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>HGB</td>
+        <td>≤ 1 g / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+      <tr>
+        <td>PLT</td>
+        <td>≤ 10 × 10⁹ / L</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+       
+      </tr>
+    </table>
+
+    
+    <!-- Remarks -->
+  <div class="separator">  
+</div>
+
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+</div>
+
+    <button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+  </div>
+</body>

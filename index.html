@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calibration Forms</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+    .machine {
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.55);
+    }
+
+    .machine:hover {
+      background-color: rgba(0.85, 0.95, 0.75, 0.55);
+
+    }
+
+    .machine-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.55);
+
+    }
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  position: relative;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+
+  opacity: 0.06;           /* 👈 CENTER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("assets/dan.png");
+  background-repeat: no-repeat;
+  background-position: left 20px bottom 20px;
+  background-size: 80px;
+
+  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("assets/dan2.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+  background-size: 80px;
+
+  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -3;
+}
+
+
+``
+
+
+  </style>
+</head>
+
+<body>
+  <h1>Select Machine</h1>
+
+  <!-- Mindray -->
+  <div class="machine">
+    <div class="machine-title">Mindray</div>
+    <select id="mindrayType" onchange="goToMindrayType()">
+      <option value="">- Model -</option>
+      <option value="mindray/bs240.html">BS-240pro</option>
+      <option value="mindray/bcseries.html">BC-Series</option>
+    </select>
+  </div>
+
+  <!-- SNIBE -->
+  <div class="machine">
+    <div class="machine-title">SNIBE</div>
+    <select id="snibeType" onchange="goToSnibeType()">
+      <option value="">- Model -</option>
+      <option value="snibe/xseries.html">X Series</option>
+      <option value="snibe/mseries.html">M Series</option>
+    </select>
+  </div>
+
+  <!-- Boule -->
+  <div class="machine">
+    <div class="machine-title">Boule</div>
+    <select id="bouleType" onchange="goToBouleType()">
+      <option value="">- Model -</option>
+      <option value="Boule/m32.html">Medonic M32m</option>
+      <option value="Boule/m51.html">Medonic M51</option>
+    </select>
+  </div>
+
+  <!-- Single-click machines -->
+  <div class="machine" onclick="location.href='Audicom/Audicom.html'">
+    <b>Audicom AC6601</b>
+  </div>
+
+  <div class="machine" onclick="location.href='EL120/EL120.html'">
+    <b>Erma Tokyo EL-120</b>
+  </div>
+
+  <div class="machine" onclick="location.href='Urit500B/Urit500B.html'">
+    <b>Urit 500B</b>
+  </div>
+
+  <div class="machine" onclick="location.href='Thermo/Thermo.html'">
+    <b>ThermoFisher Indiko Plus / Basic</b>
+  </div>
+
+  <div class="machine" onclick="location.href='Lifo/Lifo.html'">
+    <b>Lifotronics GH900plus</b>
+  </div>
+
+  <div class="machine" onclick="location.href='ahhh/bahala.html'">
+  Pag wala dito bahala ka na</div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function goToSnibeType() {
+      const link = document.getElementById("snibeType").value;
+      if (link) window.location.href = link;
+    }
+
+    function goToMindrayType() {
+      const link = document.getElementById("mindrayType").value;
+      if (link) window.location.href = link;
+    }
+
+    function goToBouleType() {
+      const link = document.getElementById("bouleType").value;
+      if (link) window.location.href = link;
+    }
+  </script>
+
+</body>
+</html>

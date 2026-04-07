@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Performance Qualification Certificate</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { text-align: center; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+    th, td { border: 1px solid #333; padding: 8px; text-align: center; }
+    th { background-color: #f2f2f2; }
+    .analysis { font-weight: bold; color: green; }
+    .section { margin-top: 30px; }
+  </style>
+</head>
+<body>
+  <h2>RGI Bio Alliance Corporation<br>Performance Qualification</h2>
+
+  <!-- Background Test -->
+  <div class="section">
+    <h3>Background Test</h3>
+    <table>
+      <tr>
+        <th>Classification/Result</th>
+        <th>Max</th>
+        <th>Min</th>
+        <th>Mean</th>
+        <th>Analysis</th>
+      </tr>
+      <tr>
+        <td>Background/Closed</td>
+        <td><input type="number" name="bg_closed_max"></td>
+        <td><input type="number" name="bg_closed_min"></td>
+        <td><input type="number" name="bg_closed_mean"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+      <tr>
+        <td>Background/Open</td>
+        <td><input type="number" name="bg_open_max"></td>
+        <td><input type="number" name="bg_open_min"></td>
+        <td><input type="number" name="bg_open_mean"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+      <tr>
+        <td>Ref. LED ON</td>
+        <td><input type="number" name="led_max"></td>
+        <td><input type="number" name="led_min"></td>
+        <td><input type="number" name="led_mean"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+    </table>
+    <p><em>Background check ensures no light leakage in the chamber and proper LED state.</em></p>
+  </div>
+
+  <!-- Plateau Test -->
+  <div class="section">
+    <h3>Plateau Test</h3>
+    <table>
+      <tr>
+        <th>Classification/Repetition</th>
+        <th>1st</th>
+        <th>2nd</th>
+        <th>3rd</th>
+        <th>4th</th>
+        <th>5th</th>
+        <th>Analysis</th>
+      </tr>
+      <tr>
+        <td>Mean Value</td>
+        <td><input type="number" name="plateau1"></td>
+        <td><input type="number" name="plateau2"></td>
+        <td><input type="number" name="plateau3"></td>
+        <td><input type="number" name="plateau4"></td>
+        <td><input type="number" name="plateau5"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+      <tr>
+        <td>Suggested D/A Highvolt</td>
+        <td><input type="number" name="hv1"></td>
+        <td><input type="number" name="hv2"></td>
+        <td><input type="number" name="hv3"></td>
+        <td><input type="number" name="hv4"></td>
+        <td><input type="number" name="hv5"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+    </table>
+    <p><em>Plateau test checks PMT performance and voltage stability.</em></p>
+  </div>
+
+  <!-- Measure Cuvettes -->
+  <div class="section">
+    <h3>Measure Cuvettes</h3>
+    <table>
+      <tr>
+        <th>Classification/Repetition</th>
+        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+        <th>CV</th><th>Analysis</th>
+      </tr>
+      <tr>
+        <td>Result</td>
+        <td><input type="number" name="cuv1"></td>
+        <td><input type="number" name="cuv2"></td>
+        <td><input type="number" name="cuv3"></td>
+        <td><input type="number" name="cuv4"></td>
+        <td><input type="number" name="cuv5"></td>
+        <td><input type="number" name="cuv6"></td>
+        <td><input type="text" name="cv"></td>
+        <td class="analysis">Passed</td>
+      </tr>
+    </table>
+    <p><em>Measure Cuvette test checks chamber performance; CV should be less than 10%.</em></p>
+  </div>
+
+  <!-- Submit -->
+  <button type="submit">Generate Certificate</button>
+</body>
+</html>

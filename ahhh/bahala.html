@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calibration Forms</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* CENTER WATERMARK */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+
+      background-image: url("bahal.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 500px;
+
+      opacity: 1;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* CORNER LOGO */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+
+      background-image: url("bahala.png");
+      background-repeat: no-repeat;
+      background-position: right 10px top 10px;
+      background-size: 80px;
+
+      opacity: 1;
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Qualification Form</title>
+
+  
+   <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+
+<div class="client-line no-print">
+  Client:
+  <input id="clientName" type="text" placeholder="Enter client name">
+</div>
+
+
+
+  <div class="content">
+
+    <!-- Normal Header -->
+<header>
+  <div class="header-wrapper">
+    <div class="header-left">
+        <!-- Replace 'logo.png' with your actual logo filename -->
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="header-right">
+        RGL BIO ALLIANCE CORPORATION<br>
+        79-A Apolonio St. corner General Araneta St.<br>
+        Project 4, Quezon City, 1109 Philippines<br>
+        T: +63 2 738 6411, +63 2 617 8892<br>
+        E: info@rglbioalliancecorp.com<br>
+        W: www.rglbioalliancecorp.com
+    </div>
+  </div>
+</header>
+
+    
+
+
+    <!-- PERFORMANCE VERIFICATION TABLE -->
+    <table>
+      <tr>
+        <th colspan="5" class="header-main">Performance Verification (AUDICOM AC6601)</th>
+      </tr>
+
+      <tr>
+        <td rowspan="9" class="vertical-text">Verification</td>
+        <th>Check</th>
+        <th>Reference / Acceptance</th>
+        <th>Result</th>
+        <th>Pass/Fail</th>
+        
+      </tr>
+
+      <tr>
+        <td>High Potential Test (V)</td>
+        <td>Normal: 3.6–4.9 V (Target: 4.4 ±0.1)</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>Zero Potential Test (V)</td>
+        <td>0.01–0.02 V</td>
+       <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>Pressure Inquiry (kPa)</td>
+        <td>16–20 kPa within 4 minutes</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>Chromatographic Column Temp (°C)</td>
+        <td>Set: 25 ±1 °C (record actual + set)</td>
+        
+          <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+      <tr>
+        <td>Ambient Temperature (°C)</td>
+        <td>16–32 °C (record)</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>Sample Pre-heating Temp (°C)</td>
+        <td>Set: 49 ±1 °C (record actual + set)</td>
+         <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>HbA0 Max Absorbance (A)</td>
+        <td>0.7000–2.8000</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+
+      <tr>
+        <td>HbA1c Appearance Time (s)</td>
+        <td>55–100 seconds</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+      </tr>
+    </table>
+
+    <!-- Optional: record column usage / consumables status (not strict pass/fail) -->
+    <table>
+      <tr>
+        <th colspan="5" class="header-main">Performance Verification</th>
+      </tr>
+      <tr>
+
+
+        
+        <th>Description</th>
+        <th>Result</th>
+        <th>Range</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        
+        <td>Level 1</td>
+        <td><input></td>
+        <td><input></td>
+        <td><b>Passed</b></td>
+      </tr>
+      <tr>
+        
+        <td>Level 2</td>
+        <td><input></td>
+        <td><input></td>
+        <td><b>Passed</b></td>
+      </tr>
+    </table>
+
+    <!-- Remarks -->
+  <div class="separator">  
+</div>
+
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+</div>
+
+    <button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+
+  <script>
+  // Set this per machine page:
+  const MACHINE_NAME = "Audicom AC6601"; // e.g. "SnibeM800", "GH900plus", "BC700"
+
+  function sanitizeFilename(text) {
+    return (text || "")
+      .trim()
+      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
+      .replace(/\s+/g, " ")                   // collapse spaces
+      .slice(0, 120);                         // avoid super-long names
+  }
+
+  function savePdfWithName() {
+    const clientRaw = document.getElementById("clientName").value;
+    const client = sanitizeFilename(clientRaw) || "Client";
+    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
+
+    const oldTitle = document.title;
+    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
+
+    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
+
+    // Restore title after opening print dialog
+    setTimeout(() => { document.title = oldTitle; }, 500);
+  }
+</script>
+</body>

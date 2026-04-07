@@ -8,21 +8,33 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <body>
 
 
+<!-- ✅ STEP 1: Metata section -->
 
 
-<div class="client-line no-print">
-  Client:
-  <input id="clientName" type="text" placeholder="Enter client name">
+ <div class="client-line no-print">
+  <h1>Preventive Maintenance Checklist</h1>
+  <label>Client Name</label><br>
+  <input type="text" id="client"
+         placeholder="e.g. Adventist Medical Center"
+         oninput="updateFilenamePreview()"
+         required><br><br>
+
+  <label>Machine</label><br>
+  <input type="text" id="machine"
+         value="Erma Tokyo EL‑120"
+         readonly><br><br>
+
+  <p id="filenamePreview"
+     style="font-size:12px; color:#555; margin-top:6px;">
+  </p>
+  <p style="font-size:12px; color:#555; margin-top:6px;">
+     This will not be included on the PDF
+  </p>
 </div>
-
-
-
-  <div class="content">
-
-
 
 <div class="content">
 
@@ -183,39 +195,60 @@
   <div><b> _________________________________________________________________</b></div>
 </div>
 
-<!-- Save as PDF Button -->
-<button class="save-btn" onclick="window.print()">Save as PDF</button>
+
+    <!-- Save as PDF Button -->
+<button class="save-btn" onclick="generatePDF()">Save as PDF</button>
 
 
+</div>
 
-  <script>
-  // Set this per machine page:
-  const MACHINE_NAME = "Erma Tokyo EL-120"; // e.g. "SnibeM800", "GH900plus", "BC700"
+<script>
+function sanitize(text) {
+  return text
+    .trim()
+    .replace(/\s+/g, '_')      // spaces → underscores
+    .replace(/[^a-zA-Z0-9_]/g, ''); // remove special chars
+}
 
-  function sanitizeFilename(text) {
-    return (text || "")
-      .trim()
-      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
-      .replace(/\s+/g, " ")                   // collapse spaces
-      .slice(0, 120);                         // avoid super-long names
-  }
+function updateFilenamePreview() {
+  const clientRaw = document.getElementById("client").value;
+  const machineRaw = document.getElementById("machine").value;
 
-  function savePdfWithName() {
-    const clientRaw = document.getElementById("clientName").value;
-    const client = sanitizeFilename(clientRaw) || "Client";
-    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
+  const client = sanitize(clientRaw || "Client");
+  const machine = sanitize(machineRaw);
 
-    const oldTitle = document.title;
-    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
-
-    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
-
-    // Restore title after opening print dialog
-    setTimeout(() => { document.title = oldTitle; }, 500);
-  }
+  document.getElementById("filenamePreview").innerText =
+    `PDF will be saved as: ${client}_${machine}.pdf`;
+}
 </script>
+  <script>
+function sanitize(text) {
+  return text
+    .trim()
+    .replace(/\s+/g, '_')
+    .replace(/[^a-zA-Z0-9_]/g, '');
+}
 
+function generatePDF() {
+  const client = sanitize(document.getElementById("client").value);
+  const machine = sanitize(document.getElementById("machine").value);
 
+  if (!client) {
+    alert("Please enter Client Name before saving PDF");
+    return;
+  }
 
+  const filename = `${client}_${machine}.pdf`;
+
+  html2pdf()
+    .from(document.body)
+    .set({
+      filename: filename,
+      margin: 10,
+      html2canvas: { scale: 2 },
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    })
+    .save();
+}
+</script>
 </body>
-</html>

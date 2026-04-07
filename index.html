@@ -1,175 +1,198 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calibration Forms</title>
+  <title>Calibration & Service Portal</title>
+
   <style>
-    body {
-      font-family: Arial;
-      padding: 20px;
+    :root {
+      --snibe:   #fde2e2;
+      --mindray:#e0f2fe;
+      --boule:  #fff1db;
+      --single: #f3f4f6;
+      --accent: #f97316;
+      --text:   #1f2937;
     }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 24px;
+      margin: 0;
+      background: #f8fafc;
+      color: var(--text);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 32px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* ===== GRID ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 22px;
+    }
+
+    /* ===== CARD ===== */
     .machine {
-      padding: 15px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background-color: rgba(255, 255, 255, 0.55);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .machine:hover {
-      background-color: rgba(0.85, 0.95, 0.75, 0.55);
-
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.15);
     }
 
     .machine-title {
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
+    .machine small {
+      opacity: 0.75;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    /* ===== COLOR VARIANTS ===== */
+    .mindray { background: var(--mindray); }
+    .snibe   { background: var(--snibe); }
+    .boule   { background: var(--boule); }
+    .single  { background: var(--single); }
+
+    /* ===== DROPDOWN ===== */
     select {
       width: 100%;
       padding: 10px;
-      font-size: 16px;
-      background-color: rgba(255, 255, 255, 0.55);
-
+      font-size: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      background: rgba(255,255,255,0.9);
+      cursor: pointer;
     }
 
+    /* ===== SINGLE CLICK ===== */
+    .single {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+    }
 
-body {
-  font-family: Arial;
-  padding: 20px;
-  position: relative;
-}
+    .single:hover {
+      background: linear-gradient(
+        135deg,
+        var(--single),
+        #ffe7d6
+      );
+    }
 
+    /* ===== LOGO WATERMARKS ===== */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("assets/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 320px;
+      opacity: 0.05;
+      pointer-events: none;
+      z-index: -2;
+    }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("assets/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 300px;
-
-  opacity: 0.06;           /* 👈 CENTER LOGO OPACITY */
-  pointer-events: none;
-  z-index: -2;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("assets/dan.png");
-  background-repeat: no-repeat;
-  background-position: left 20px bottom 20px;
-  background-size: 80px;
-
-  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
-  pointer-events: none;
-  z-index: -1;
-}
-
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-
-  background-image: url("assets/dan2.png");
-  background-repeat: no-repeat;
-  background-position: right 10px top 10px;
-  background-size: 80px;
-
-  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
-  pointer-events: none;
-  z-index: -3;
-}
-
-
-``
-
-
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url("assets/dan.png");
+      background-repeat: no-repeat;
+      background-position: left 20px bottom 20px;
+      background-size: 90px;
+      opacity: 0.25;
+      pointer-events: none;
+      z-index: -1;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Select Machine</h1>
+
+<h1>Machine Selection</h1>
+
+<div class="grid">
 
   <!-- Mindray -->
-  <div class="machine">
+  <div class="machine mindray">
     <div class="machine-title">Mindray</div>
-    <select id="mindrayType" onchange="goToMindrayType()">
-      <option value="">- Model -</option>
-      <option value="mindray/bs240.html">BS-240pro</option>
-      <option value="mindray/bcseries.html">BC-Series</option>
+    <small>Clinical Chemistry / Hematology</small>
+    <select onchange="goTo(this.value)">
+      <option value="">– Select Model –</option>
+      <option value="mindray/bs240.html">BS‑240 Pro</option>
+      <option value="mindray/bcseries.html">BC‑Series</option>
     </select>
   </div>
 
   <!-- SNIBE -->
-  <div class="machine">
+  <div class="machine snibe">
     <div class="machine-title">SNIBE</div>
-    <select id="snibeType" onchange="goToSnibeType()">
-      <option value="">- Model -</option>
+    <small>Chemiluminescence Systems</small>
+    <select onchange="goTo(this.value)">
+      <option value="">– Select Series –</option>
       <option value="snibe/xseries.html">X Series</option>
       <option value="snibe/mseries.html">M Series</option>
     </select>
   </div>
 
   <!-- Boule -->
-  <div class="machine">
+  <div class="machine boule">
     <div class="machine-title">Boule</div>
-    <select id="bouleType" onchange="goToBouleType()">
-      <option value="">- Model -</option>
+    <small>Hematology Analyzers</small>
+    <select onchange="goTo(this.value)">
+      <option value="">– Select Model –</option>
       <option value="Boule/m32.html">Medonic M32m</option>
       <option value="Boule/m51.html">Medonic M51</option>
     </select>
   </div>
 
-  <!-- Single-click machines -->
-  <div class="machine" onclick="location.href='Audicom/Audicom.html'">
-    <b>Audicom AC6601</b>
+  <!-- Single-click -->
+  <div class="machine single" onclick="location.href='Audicom/Audicom.html'">
+    Audicom AC6601
   </div>
 
-  <div class="machine" onclick="location.href='EL120/EL120.html'">
-    <b>Erma Tokyo EL-120</b>
+  <div class="machine single" onclick="location.href='EL120/EL120.html'">
+    Erma Tokyo EL‑120
   </div>
 
-  <div class="machine" onclick="location.href='Urit500B/Urit500B.html'">
-    <b>Urit 500B</b>
+  <div class="machine single" onclick="location.href='Urit500B/Urit500B.html'">
+    Urit 500B
   </div>
 
-  <div class="machine" onclick="location.href='Thermo/Thermo.html'">
-    <b>ThermoFisher Indiko Plus / Basic</b>
+  <div class="machine single" onclick="location.href='Thermo/Thermo.html'">
+    ThermoFisher Indiko Plus / Basic
   </div>
 
-  <div class="machine" onclick="location.href='Lifo/Lifo.html'">
-    <b>Lifotronics GH900plus</b>
+  <div class="machine single" onclick="location.href='Lifo/Lifo.html'">
+    Lifotronics GH‑900 Plus
   </div>
 
-  <div class="machine" onclick="location.href='ahhh/bahala.html'">
-  Pag wala dito bahala ka na</div>
-  </div>
+</div>
 
-  <!-- Script -->
-  <script>
-    function goToSnibeType() {
-      const link = document.getElementById("snibeType").value;
-      if (link) window.location.href = link;
-    }
-
-    function goToMindrayType() {
-      const link = document.getElementById("mindrayType").value;
-      if (link) window.location.href = link;
-    }
-
-    function goToBouleType() {
-      const link = document.getElementById("bouleType").value;
-      if (link) window.location.href = link;
-    }
-  </script>
+<script>
+  function goTo(link) {
+    if (link) window.location.href = link;
+  }
+</script>
 
 </body>
 </html>

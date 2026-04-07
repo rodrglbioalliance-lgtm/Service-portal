@@ -34,19 +34,6 @@ body::before {
   z-index: 0;
 }
 
-/* Corner logo */
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("assets/dan2.png"); /* adjust if needed */
-  background-repeat: no-repeat;
-  background-position: right 10px top 10px;
-  background-size: 80px;
-  opacity: 0.25;
-  pointer-events: none;
-  z-index: 0;
-}
 
 /* =========================================================
    HEADER (ALL MACHINE PAGES)

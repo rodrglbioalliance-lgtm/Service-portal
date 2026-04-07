@@ -218,7 +218,7 @@ function updateFilenamePreview() {
   const machine = sanitize(machineRaw);
 
   document.getElementById("filenamePreview").innerText =
-    `PDF will be saved as: ${client}_${machine}.pdf`;
+    `PDF will be saved as: Checklist_${client}_${machine}.pdf`;
 }
 </script>
   <script>
@@ -238,7 +238,7 @@ function generatePDF() {
     return;
   }
 
-  const filename = `${client}_${machine}.pdf`;
+  const filename = `Checklist_${client}_${machine}.pdf`;
 
   html2pdf()
     .from(document.body)

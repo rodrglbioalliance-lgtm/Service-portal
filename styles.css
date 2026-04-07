@@ -1,103 +1,111 @@
 /* =========================================================
-   GLOBAL / BASE
+   PAGE & BODY (PDF SAFE)
    ========================================================= */
+
 @page {
   size: A4;
-  margin: 5mm;
+  margin: 10mm;
 }
 
 body {
   width: 210mm;
   min-height: 297mm;
-  margin: auto;
-  font-family: Arial, sans-serif;
-  background: white;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 10mm;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #000;
   position: relative;
 }
 
 /* =========================================================
-   WATERMARKS / LOGOS (SCREEN + PRINT SAFE)
+   WATERMARKS / LOGOS
    ========================================================= */
 
-/* Center watermark */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("assets/logo.png"); /* adjust if needed */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 300px;
+  background: url("assets/logo.png") no-repeat center;
+  background-size: 280px;
   opacity: 0.06;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("assets/dan2.png") no-repeat right 10px top 10px;
+  background-size: 80px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
 
 /* =========================================================
-   HEADER (ALL MACHINE PAGES)
+   HEADER
    ========================================================= */
+
 header {
-  width: 100%;
-  background: white;
-  border-bottom: 2px solid black;
-  padding: 20px 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .header-wrapper {
-  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-left img {
-  height: 80px;
+  height: 70px;
 }
 
 .header-right {
-  text-align: right;
-  font-family: Calibri, Arial, sans-serif;
   font-size: 10px;
   line-height: 1.4;
+  text-align: right;
 }
 
 /* =========================================================
-   CONTENT WRAPPER
+   PDF CONTENT WRAPPER
    ========================================================= */
-.content {
-  transform: scale(0.9);
-  transform-origin: top center;
+
+#pdfContent {
+  padding: 2px; /* prevents border clipping */
 }
 
 /* =========================================================
-   TABLES (CALIBRATION / QUALIFICATION)
+   TABLES (GLOBAL – AFFECTS ALL FILES)
    ========================================================= */
+
 table {
-  width: 80%;
-  margin: 20px auto;
+  width: 100%;
+  margin: 16px 0;
   border-collapse: collapse;
-  font-family: "Times New Roman", serif;
+  border: 2px solid #000;            /* strong outer border */
   page-break-inside: avoid;
 }
 
 th,
 td {
-  border: 1px solid black;
-  font-size: 16px;
-  line-height: 1.4;
-  padding: 4px 6px;
-  text-align: center;
+  border: 1px solid #000;
+  padding: 6px 8px;
+  font-size: 12px;
   vertical-align: middle;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
 }
 
 .header-main {
+  background: #f5f5f5;
   font-weight: bold;
-  background-color: #f9f9f9;
 }
 
 .vertical-text {
@@ -107,160 +115,93 @@ td {
   width: 18px;
 }
 
+/* Prevent broken borders across pages */
+tr,
+th,
+td {
+  page-break-inside: avoid;
+}
+
 /* =========================================================
-   INPUTS
+   INPUTS (PDF FRIENDLY)
    ========================================================= */
-input {
-  width: 90%;
+
+input,
+textarea {
+  width: 100%;
   border: none;
+  border-bottom: 1px solid #000;
+  background: transparent;
+  font-size: 12px;
   text-align: center;
-  font-family: inherit;
-  font-size: 16px;
   outline: none;
 }
 
 /* =========================================================
-   SEPARATORS / NOTES
+   SEPARATORS / REMARKS
    ========================================================= */
+
 .separator {
-  font-family: "Georgia", serif;
-  text-align: left;
-  width: 80%;
-  margin: 10px auto;
-  font-size: 14px;
+  margin-top: 12px;
+  font-size: 12px;
   font-weight: bold;
 }
 
 /* =========================================================
-   SAVE BUTTON
+   SCREEN‑ONLY ELEMENTS
    ========================================================= */
+
+.no-print {
+  display: block;
+}
+
 .save-btn {
   display: block;
   margin: 20px auto;
   padding: 10px 20px;
   font-size: 14px;
-  background-color: #0078D7;
-  color: white;
+  background: #0078d7;
+  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 /* =========================================================
-   MACHINE SELECTOR PAGE (Firstv2.html)
+   MACHINE SELECTOR (PORTAL PAGE)
    ========================================================= */
+
 .machine {
   padding: 15px;
   margin: 10px 0;
-  border: 1px solid #ccc;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.55);
-}
-
-.machine:hover {
-  background-color: rgba(0.85, 0.95, 0.75, 0.55);
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .machine-title {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 8px;
 }
 
 select {
   width: 100%;
   padding: 10px;
-  font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
 }
 
 /* =========================================================
-   PREVENTIVE MAINTENANCE CHECKLIST (SCREEN ONLY)
+   PRINT RULES (FINAL OVERRIDE)
    ========================================================= */
-.pm-checklist {
-  width: 80%;
-  margin: 30px auto;
-  padding: 15px;
-  background: #fff9e6;
-  border: 1px dashed #999;
-}
 
-.pm-checklist h3 {
-  margin-top: 0;
-}
-
-/* =========================================================
-   PRINT RULES
-   ========================================================= */
 @media print {
+  .no-print,
   .save-btn {
     display: none !important;
   }
 
-  .pm-checklist {
-    display: none !important;
-  }
-
-  
-.no-print {
-    display: none !important;
-  }
-
-  
-@media print {
   * {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
 }
-
-
-.no-print {
-  display: block;
-}
-
-@media print {
-  .no-print {
-    display: none !important;
- 
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  page-break-inside: avoid;
-}
-
-tr, td, th {
-  page-break-inside: avoid;
-}
-
-input {
-  border: none;
-  border-bottom: 1px solid #000;
-  width: 100%;
-  font-size: 12px;
-}
-
-@media print {
-
-  /* Remove white background from inputs */
-  input,
-  textarea,
-  select {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-  }
-
-  /* Optional: keep text readable */
-  input,
-  textarea {
-    color: #000 !important;
-    font-weight: normal;
-  }
-}
-
-
-}
-``

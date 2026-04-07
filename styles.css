@@ -215,6 +215,32 @@ select {
 }
 
 
+.no-print {
+  display: block;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+ 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  page-break-inside: avoid;
+}
+
+tr, td, th {
+  page-break-inside: avoid;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  font-size: 12px;
+}
+
 @media print {
 
   /* Remove white background from inputs */

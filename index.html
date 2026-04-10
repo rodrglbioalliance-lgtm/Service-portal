@@ -1,240 +1,175 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Calibration & Service Portal</title>
-
-
+  <title>Calibration Forms</title>
   <style>
-    :root {
-      --snibe:   #fde2e2;
-      --mindray:#e0f2fe;
-      --boule:  #fff1db;
-      --single: #f3f4f6;
-      --accent: #f97316;
-      --text:   #1f2937;
-    }
-
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 24px;
-      margin: 0;
-      background: #f8fafc;
-      color: var(--text);
+      font-family: Arial;
+      padding: 20px;
     }
 
-    h1 {
-      text-align: center;
-      margin-bottom: 32px;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-    }
-
-    /* ===== GRID ===== */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 22px;
-    }
-
-    /* ===== CARD ===== */
     .machine {
-      border-radius: 14px;
-      padding: 18px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.55);
     }
 
     .machine:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+      background-color: rgba(0.85, 0.95, 0.75, 0.55);
+
     }
 
     .machine-title {
       font-size: 18px;
       font-weight: bold;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
-    .machine small {
-      opacity: 0.75;
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    /* ===== COLOR VARIANTS ===== */
-    .mindray { background: var(--mindray); }
-    .snibe   { background: var(--snibe); }
-    .boule   { background: var(--boule); }
-    .single  { background: var(--single); }
-
-    /* ===== DROPDOWN ===== */
     select {
       width: 100%;
       padding: 10px;
-      font-size: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      background: rgba(255,255,255,0.9);
-      cursor: pointer;
-    }
-
-    /* ===== SINGLE CLICK ===== */
-    .single {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 90px;
       font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.55);
+
     }
 
-    .single:hover {
-      background: linear-gradient(
-        135deg,
-        var(--single),
-        #ffe7d6
-      );
-    }
 
-    .form-link {
-  background: linear-gradient(135deg, #ffe4d6, #fff7ed);
-  border: 2px dashed #f97316;
+body {
+  font-family: Arial;
+  padding: 20px;
+  position: relative;
 }
 
 
-    /* ===== LOGO WATERMARKS ===== */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image: url("assets/logo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 320px;
-      opacity: 0.05;
-      pointer-events: none;
-      z-index: -2;
-    }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
 
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image: url("assets/dan.png");
-      background-repeat: no-repeat;
-      background-position: left 20px bottom 20px;
-      background-size: 90px;
-      opacity: 0.25;
-      pointer-events: none;
-      z-index: -1;
-    }
+  background-image: url("assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+
+  opacity: 0.06;           /* 👈 CENTER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("assets/dan.png");
+  background-repeat: no-repeat;
+  background-position: left 20px bottom 20px;
+  background-size: 80px;
+
+  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("assets/dan2.png");
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+  background-size: 80px;
+
+  opacity: 0.25;           /* 👈 CORNER LOGO OPACITY */
+  pointer-events: none;
+  z-index: -3;
+}
+
+
+``
+
+
   </style>
 </head>
 
 <body>
-
-<h1>Machine Selection</h1>
-
-<div class="grid">
+  <h1>Select Machine</h1>
 
   <!-- Mindray -->
-  <div class="machine mindray">
+  <div class="machine">
     <div class="machine-title">Mindray</div>
-    <small>Clinical Chemistry / Hematology</small>
-    <select onchange="goTo(this.value)">
-      <option value="">– Select Model –</option>
-      <option value="mindray/bs240.html">BS‑240 Pro</option>
-      <option value="mindray/bcseries.html">BC‑Series</option>
+    <select id="mindrayType" onchange="goToMindrayType()">
+      <option value="">- Model -</option>
+      <option value="mindray/bs240.html">BS-240pro</option>
+      <option value="mindray/bcseries.html">BC-Series</option>
     </select>
   </div>
 
   <!-- SNIBE -->
-  <div class="machine snibe">
+  <div class="machine">
     <div class="machine-title">SNIBE</div>
-    <small>Chemiluminescence Systems</small>
-    <select onchange="goTo(this.value)">
-      <option value="">– Select Series –</option>
+    <select id="snibeType" onchange="goToSnibeType()">
+      <option value="">- Model -</option>
       <option value="snibe/xseries.html">X Series</option>
       <option value="snibe/mseries.html">M Series</option>
     </select>
   </div>
 
   <!-- Boule -->
-  <div class="machine boule">
+  <div class="machine">
     <div class="machine-title">Boule</div>
-    <small>Hematology Analyzers</small>
-    <select onchange="goTo(this.value)">
-      <option value="">– Select Model –</option>
+    <select id="bouleType" onchange="goToBouleType()">
+      <option value="">- Model -</option>
       <option value="Boule/m32.html">Medonic M32m</option>
       <option value="Boule/m51.html">Medonic M51</option>
     </select>
   </div>
 
-  <!-- Single-click -->
-  <div class="machine single" onclick="location.href='audicom/audicom.html'">
-    Audicom AC6601
+  <!-- Single-click machines -->
+  <div class="machine" onclick="location.href='Audicom/Audicom.html'">
+    <b>Audicom AC6601</b>
   </div>
 
-  <div class="machine single" onclick="location.href='EL120/EL120.html'">
-    Erma Tokyo EL‑120
+  <div class="machine" onclick="location.href='EL120/EL120.html'">
+    <b>Erma Tokyo EL-120</b>
   </div>
 
-  <div class="machine single" onclick="location.href='Urit500b/Urit500B.html'">
-    Urit 500B
+  <div class="machine" onclick="location.href='Urit500B/Urit500B.html'">
+    <b>Urit 500B</b>
   </div>
 
-  <div class="machine single" onclick="location.href='thermo/thermo.html'">
-    ThermoFisher Indiko Plus / Basic
+  <div class="machine" onclick="location.href='Thermo/Thermo.html'">
+    <b>ThermoFisher Indiko Plus / Basic</b>
   </div>
 
-  <div class="machine single" onclick="location.href='lifo/lifo.html'">
-    Lifotronics GH‑900 Plus
+  <div class="machine" onclick="location.href='Lifo/Lifo.html'">
+    <b>Lifotronics GH900plus</b>
   </div>
 
-</div>
-
-<h1>Google Forms</h1>
-
-<div class="grid">
-  
-<div class="machine single form-link"
-     onclick="window.open('https://forms.gle/J2cUFuD79T3MmNri6', '_blank')">
-  📝 Submit Service Report
-</div>
-  
-<div class="machine single form-link"
-     onclick="window.open('https://forms.gle/CagEHwCXtDaN2xKv7', '_blank')">
-  ⚠️ Submit Troubleshooting Request
-</div>
-
-<div class="machine single form-link"
-     onclick="window.open('https://forms.gle/BbGs2zCMDn7fPk1L9', '_blank')">
-  🔬 Submit Machine Concern(CRM)
-</div>
-
-<div class="machine single form-link"
-     onclick="window.open('https://forms.gle/QPL7vKtR7NFjFpTK6', '_blank')">
-  📋 Service Report Monitoring File
-</div>
-</div>
-
-
-<h1>Commissioning & Installation Report</h1>
-
-<div class="grid">
-  
-<div class="machine single" onclick="location.href='ahhh/bahala.html'">
-    ⚠️UNDER REPAIR⚠️
+  <div class="machine" onclick="location.href='ahhh/bahala.html'">
+  Pag wala dito bahala ka na</div>
   </div>
-  
 
+  <!-- Script -->
+  <script>
+    function goToSnibeType() {
+      const link = document.getElementById("snibeType").value;
+      if (link) window.location.href = link;
+    }
 
-<script>
-  function goTo(link) {
-    if (link) window.location.href = link;
-  }
-</script>
+    function goToMindrayType() {
+      const link = document.getElementById("mindrayType").value;
+      if (link) window.location.href = link;
+    }
+
+    function goToBouleType() {
+      const link = document.getElementById("bouleType").value;
+      if (link) window.location.href = link;
+    }
+  </script>
 
 </body>
+</html>

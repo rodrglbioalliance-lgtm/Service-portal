@@ -31,9 +31,10 @@
 
    <table>
   <tr>
-    <th colspan="3">Initialization of Moving Parts</th>
+    <th colspan="4" class="header-main">Performance Qualification</th>
   </tr>
   <tr>
+        <td rowspan="11" class="vertical-text">Hardware Initialization</td>
     <th>Component</th>
     <th>Acceptance Criteria</th>
     <th>Result</th>
@@ -71,7 +72,7 @@
 
   <tr>
     <td>Washer Transport</td>
-    <td>Initializes without error; rack moves smoothly</td>
+    <td>Initializes without error; reaction modules moves smoothly</td>
     <td>■ Pass □ Fail</td>
   </tr>
 
@@ -99,7 +100,63 @@
     <td>■ Pass □ Fail</td>
   </tr>
 </table>
-``
+
+  <!-- PIPETTOR -->
+<table>
+<tr>   
+  <th colspan="4" class="header-main">Performance Qualification</th>
+  </tr>
+  <td rowspan="4" class="vertical-text">Pipettor</td>
+  <th>Check Item</th>
+  <th>Acceptance Criteria</th>
+  <th>Result</th>
+</tr>
+<tr>
+  <td>Pipettor initialization</td>
+  <td>No error, moves to home position</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+<tr>
+  <td>Needle alignment</td>
+  <td>Correct position, no collision</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+<tr>
+  <td>Liquid level detection</td>
+  <td>Detects liquid, no false alarms</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+</table>
+
+<!-- PUMPS -->
+<table>
+<tr>
+  <td rowspan="5" class="vertical-text">Pumps</td>
+  <th>Check Item</th>
+  <th>Acceptance Criteria</th>
+  <th>Result</th>
+</tr>
+<tr>
+  <td>Diluter pump</td>
+  <td>Injects correct volume, no leaks</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+<tr>
+  <td>Starter pump</td>
+  <td>Injects correct volume, no leaks</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+<tr>
+  <td>Vacuum bypass pump</td>
+  <td>Normal operation, no blockages</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+<tr>
+  <td>Condensate water pump</td>
+  <td>Removes water, no error</td>
+  <td>■ Pass □ Fail</td>
+</tr>
+</table>
 
   <!-- TABLE 1: Background -->
   <table>
@@ -321,6 +378,18 @@
 </tr>
 </table>
 
+ <!-- Remarks -->
+  <div class="separator">  
+</div>
+
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+</div>
+
   <button class="save-btn" onclick="window.print()">Save as PDF</button>
 
 </div>
@@ -371,4 +440,3 @@ function checkLC() {
 
 </body>
 </html>
-``

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Performance Qualification Form</title>
+  <title>Audicom Performace Verification Checklist</title>
 
   
    <link rel="stylesheet" href="../styles.css">
@@ -11,14 +11,6 @@
 </head>
 
 <body>
-
-
-<div class="client-line no-print">
-  Client:
-  <input id="clientName" type="text" placeholder="Enter client name">
-</div>
-
-
 
   <div class="content">
 
@@ -145,45 +137,19 @@
       </tr>
     </table>
 
-    <!-- Remarks -->
+<!-- Remarks -->
   <div class="separator">  
 </div>
 
 <div class="separator">
   
   <div>Remarks: </div>
-  <div><b> _________________________________________________________________</b></div>
-  <div><b> _________________________________________________________________</b></div>
-  <div><b> _________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
 </div>
 
     <button class="save-btn" onclick="window.print()">Save as PDF</button>
 
-
-  <script>
-  // Set this per machine page:
-  const MACHINE_NAME = "Audicom AC6601"; // e.g. "SnibeM800", "GH900plus", "BC700"
-
-  function sanitizeFilename(text) {
-    return (text || "")
-      .trim()
-      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
-      .replace(/\s+/g, " ")                   // collapse spaces
-      .slice(0, 120);                         // avoid super-long names
-  }
-
-  function savePdfWithName() {
-    const clientRaw = document.getElementById("clientName").value;
-    const client = sanitizeFilename(clientRaw) || "Client";
-    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
-
-    const oldTitle = document.title;
-    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
-
-    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
-
-    // Restore title after opening print dialog
-    setTimeout(() => { document.title = oldTitle; }, 500);
-  }
-</script>
+  </div>
 </body>

@@ -1,243 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Preventive Maintenance – Lifotronics GH‑900Plus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Qualification Form</title>
 
-  <!-- Shared styles -->
-  <link rel="stylesheet" href="../styles.css">
+  
+   <link rel="stylesheet" href="../styles.css">
+
 </head>
 
 <body>
 
-<!-- ======================================================
-     SCREEN‑ONLY METADATA (NOT INCLUDED IN PDF)
-     ====================================================== -->
-<div class="no-print">
 
-  <h1>Preventive Maintenance Checklist</h1>
-
-  <label>Client Name</label><br>
-  <input
-    type="text"
-    id="client"
-    placeholder="e.g. Adventist Medical Center"
-    oninput="updateFilenamePreview()"
-    required
-  ><br><br>
-
-  <label>Machine</label><br>
-  <input
-    type="text"
-    id="machine"
-    value="Lifotronics_GH900Plus"
-    readonly
-  ><br>
-
-  <p id="filenamePreview" class="note"></p>
-
+<div class="client-line no-print">
+  Client:
+  <input id="clientName" type="text" placeholder="Enter client name">
 </div>
 
-<!-- ======================================================
-     PDF CONTENT (ONLY THIS IS SAVED)
-     ====================================================== -->
-<div id="pdfContent">
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <div class="header-wrapper">
-      <div class="header-left">
+
+  <div class="content">
+
+    <!-- Normal Header -->
+<header>
+  <div class="header-wrapper">
+    <div class="header-left">
+        <!-- Replace 'logo.png' with your actual logo filename -->
         <img src="logo.png" alt="Company Logo">
-      </div>
-      <div class="header-right">
+    </div>
+    <div class="header-right">
         RGL BIO ALLIANCE CORPORATION<br>
-        79‑A Apolonio St. corner General Araneta St.<br>
+        79-A Apolonio St. corner General Araneta St.<br>
         Project 4, Quezon City, 1109 Philippines<br>
-        T: +63 2 738 6411 / +63 2 617 8892<br>
+        T: +63 2 738 6411, +63 2 617 8892<br>
         E: info@rglbioalliancecorp.com<br>
         W: www.rglbioalliancecorp.com
-      </div>
     </div>
-  </header>
-
-  <!-- ===== TABLE 1: INITIALIZATION ===== -->
-  <table>
-    <tr>
-      <th colspan="3" class="header-main">
-        Initialization of Moving Parts – GH‑900Plus
-      </th>
-    </tr>
-    <tr>
-      <th>Component</th>
-      <th>Acceptance Criteria</th>
-      <th>Result</th>
-    </tr>
-
-    <tr>
-      <td>Sample Introduction Rack</td>
-      <td>Initializes without error; rack moves smoothly</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>2D Arm – X Axis</td>
-      <td>Initializes to home position; no abnormal noise</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>2D Arm – Z Axis</td>
-      <td>Initializes correctly; vertical movement normal</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Sampling Needle Assembly</td>
-      <td>Moves correctly during initialization; no collision</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>High Pressure Pump Motor</td>
-      <td>Initializes without alarm; motor responds normally</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>1 mL Plunger Pump</td>
-      <td>Initializes normally; no abnormal resistance</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Six‑Way Valve</td>
-      <td>Initializes correctly; valve switches positions normally</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Waste Pump</td>
-      <td>Initializes without error; normal rotation</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Degassing Vacuum Pump</td>
-      <td>Initializes normally; no alarm or abnormal noise</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-  </table>
-
-  <!-- ===== TABLE 2: FLUIDICS ===== -->
-  <table>
-    <tr>
-      <th colspan="3" class="header-main">
-        Fluidic System Preparation – GH‑900Plus
-      </th>
-    </tr>
-    <tr>
-      <th>Procedure</th>
-      <th>Acceptance Criteria</th>
-      <th>Result</th>
-    </tr>
-    <tr>
-      <td>Prime Liquid Line</td>
-      <td>Liquid lines filled completely; no leakage</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Bubble Elimination</td>
-      <td>Air bubbles removed; pressure stabilizes</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Empty Test</td>
-      <td>Baseline smooth; no abnormal peaks</td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-  </table>
-
-  <!-- ===== TABLE 3: PERFORMANCE QUALIFICATION ===== -->
-  <table>
-    <tr>
-      <th colspan="4" class="header-main">
-        Performance Qualification
-      </th>
-    </tr>
-    <tr>
-      <th>Description</th>
-      <th>Reference</th>
-      <th>Value</th>
-      <th>Result</th>
-    </tr>
-    <tr>
-      <td>Column Temperature</td>
-      <td>25 ~ 40 °C</td>
-      <td><input></td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Ambient Temperature</td>
-      <td>10 ~ 35 °C</td>
-      <td><input></td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-    <tr>
-      <td>Column Pressure</td>
-      <td>4 ~ 8 MPa</td>
-      <td><input></td>
-      <td>■ Pass □ Fail</td>
-    </tr>
-  </table>
-
-  <!-- ===== TABLE 4: PERFORMANCE VERIFICATION ===== -->
-  <table>
-    <tr>
-      <th colspan="4" class="header-main">
-        Performance Verification
-      </th>
-    </tr>
-    <tr>
-      <th>Description</th>
-      <th>Result</th>
-      <th>Range</th>
-      <th>Remarks</th>
-    </tr>
-    <tr>
-      <td>Level 1</td>
-      <td><input></td>
-      <td><input></td>
-      <td>Passed</td>
-    </tr>
-    <tr>
-      <td>Level 2</td>
-      <td><input></td>
-      <td><input></td>
-      <td>Passed</td>
-    </tr>
-  </table>
-
-  <!-- ===== REMARKS ===== -->
-  <div class="separator">
-    Remarks:
-    _________________________________________________
-    _________________________________________________
-    _________________________________________________
   </div>
+</header>
 
+    <table>
+  <tr>
+    <th colspan="3">Initialization of Moving Parts – GH-900Plus</th>
+  </tr>
+  <tr>
+    <th>Component</th>
+    <th>Acceptance Criteria</th>
+    <th>Result</th>
+  </tr>
+
+  <tr>
+    <td>Sample Introduction Rack</td>
+    <td>Initializes without error; rack moves smoothly</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>2D Arm – X Axis</td>
+    <td>Initializes to home position; no abnormal noise</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>2D Arm – Z Axis</td>
+    <td>Initializes correctly; vertical movement normal</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Sampling Needle Assembly</td>
+    <td>Moves correctly during initialization; no collision</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>High Pressure Pump Motor</td>
+    <td>Initializes without alarm; motor responds normally</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>1 mL Plunger Pump</td>
+    <td>Initializes normally; no abnormal resistance</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Six-Way Valve</td>
+    <td>Initializes correctly; valve switches positions normally</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Waste Pump</td>
+    <td>Initializes without error; normal rotation</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Degassing Vacuum Pump</td>
+    <td>Initializes normally; no alarm or abnormal noise</td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+</table>
+
+<table>
+  <tr>
+    <th colspan="3">Fluidic System Preparation – GH-900Plus</th>
+  </tr>
+  <tr>
+    <th>Procedure</th>
+    <th>Acceptance Criteria</th>
+    <th>Result</th>
+  </tr>
+
+  <tr>
+    <td>Prime Liquid Line</td>
+    <td>
+      Liquid lines filled completely; no leakage; system pressure builds normally
+    </td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Bubble Elimination</td>
+    <td>
+      Air bubbles removed from liquid path; pressure stabilizes within normal range
+    </td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+  <tr>
+    <td>Empty Test</td>
+    <td>
+      Chromatogram baseline smooth; no abnormal peaks observed
+    </td>
+    <td>■ Pass □ Fail</td>
+  </tr>
+
+</table>
+
+    <!-- TABLE 2: Performance Qualification -->
+    <table>
+      <tr>
+        <th colspan="6" class="header-main">Performance Qualification</th>
+      </tr>
+      <tr>
+        <td rowspan="8" class="vertical-text">Analyzer Status</td>
+        <th>Description</th>
+        <th>Reference</th>
+        <th>Value</th>
+        <th>Result</th>
+        
+      </tr>
+
+      <tr>
+        <td>Column Temperature</td>
+        <td>25 ~ 40 °C</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+
+      <tr>
+        <td>Ambient Temperature</td>
+        <td>10 ~ 35 °C</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+
+      <tr>
+        <td>ADC415 Gain</td>
+        <td>24,000 ~ 28,000</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+
+      <tr>
+        <td>ADC500 Gain</td>
+        <td>16,000 ~ 20,000</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+       
+      </tr>
+
+      <tr>
+        <td>Column Pressure</td>
+        <td>4 ~ 8 MPa</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+
+      <tr>
+        <td>Calibration Factor</td>
+        <td>0.7 ~ 1.4</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+
+      <tr>
+        <td>Calibration Offset</td>
+        <td>-3 ~ +3</td>
+        <td><input></td>
+        <td>■ Pass □ Fail</td>
+        
+      </tr>
+    </table>
+
+<!-- TABLE 1: Performance Verification -->
+    <table>
+      <tr>
+        <th colspan="5" class="header-main">Performance Verification</th>
+      </tr>
+      <tr>
+<td rowspan="3" class="vertical-text">Quality Control</td>
+
+        
+        <th>Description</th>
+        <th>Result</th>
+        <th>Range</th>
+        <th>Remarks</th>
+      </tr>
+      <tr>
+        
+        <td>Level 1</td>
+        <td><input></td>
+        <td><input></td>
+        <td><b>Passed</b></td>
+      </tr>
+      <tr>
+        
+        <td>Level 2</td>
+        <td><input></td>
+        <td><input></td>
+        <td><b>Passed</b></td>
+      </tr>
+    </table>
+
+    <!-- Remarks -->
+  <div class="separator">  
 </div>
 
-<!-- ======================================================
-     SAVE BUTTON (SCREEN ONLY)
-     ====================================================== -->
-<button class="save-btn no-print" onclick="generatePDF()">
-  Save as PDF
-</button>
+<div class="separator">
+  
+  <div>Remarks: </div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+  <div><b> _________________________________________________________________</b></div>
+</div>
 
-<!-- ======================================================
-     SCRIPTS
-     ====================================================== -->
+    <button class="save-btn" onclick="savePdfWithName()">Save as PDF</button>
 
-<!-- html2pdf library (LOCAL COPY – MUST COME FIRST) -->
-<script src="../js/html2pdf.bundle.min.js"></script>
+  </div>
 
-<!-- shared PDF logic -->
-<script src="../js/pdf-utils.js"></script>
+  <script>
+  // Set this per machine page:
+  const MACHINE_NAME = "Lifotronics GH900"; // e.g. "SnibeM800", "GH900plus", "BC700"
 
+  function sanitizeFilename(text) {
+    return (text || "")
+      .trim()
+      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
+      .replace(/\s+/g, " ")                   // collapse spaces
+      .slice(0, 120);                         // avoid super-long names
+  }
 
+  function savePdfWithName() {
+    const clientRaw = document.getElementById("clientName").value;
+    const client = sanitizeFilename(clientRaw) || "Client";
+    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
 
+    const oldTitle = document.title;
+    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
+
+    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
+
+    // Restore title after opening print dialog
+    setTimeout(() => { document.title = oldTitle; }, 500);
+  }
+</script>
 </body>
-</html>

@@ -11,17 +11,6 @@
 </head>
 
 <body>
-
-
-<div class="client-line no-print">
-  Client:
-  <input id="clientName" type="text" placeholder="Enter client name">
-</div>
-
-
-
-  <div class="content">
-
     <!-- Normal Header -->
 <header>
   <div class="header-wrapper">
@@ -41,10 +30,11 @@
 </header>
 
     <table>
-  <tr>
-    <th colspan="3">Initialization of Moving Parts – GH-900Plus</th>
-  </tr>
-  <tr>
+      <tr>
+        <th colspan="4" class="header-main">Performance Qualification</th>
+      </tr>
+      <tr>
+        <td rowspan="10" class="vertical-text">Hardware</td>
     <th>Component</th>
     <th>Acceptance Criteria</th>
     <th>Result</th>
@@ -106,11 +96,12 @@
 
 </table>
 
-<table>
-  <tr>
-    <th colspan="3">Fluidic System Preparation – GH-900Plus</th>
-  </tr>
-  <tr>
+  <table>
+      <tr>
+        <th colspan="4" class="header-main">Performance Qualification</th>
+      </tr>
+      <tr>
+        <td rowspan="8" class="vertical-text">Fluidics</td>
     <th>Procedure</th>
     <th>Acceptance Criteria</th>
     <th>Result</th>
@@ -119,7 +110,7 @@
   <tr>
     <td>Prime Liquid Line</td>
     <td>
-      Liquid lines filled completely; no leakage; system pressure builds normally
+      Liquid lines filled completely; no leakage;<br> system pressure builds normally
     </td>
     <td>■ Pass □ Fail</td>
   </tr>
@@ -127,7 +118,7 @@
   <tr>
     <td>Bubble Elimination</td>
     <td>
-      Air bubbles removed from liquid path; pressure stabilizes within normal range
+      Air bubbles removed from liquid path; <br>pressure stabilizes within normal range
     </td>
     <td>■ Pass □ Fail</td>
   </tr>
@@ -135,7 +126,7 @@
   <tr>
     <td>Empty Test</td>
     <td>
-      Chromatogram baseline smooth; no abnormal peaks observed
+      Chromatogram baseline smooth; <br>no abnormal peaks observed
     </td>
     <td>■ Pass □ Fail</td>
   </tr>
@@ -212,7 +203,7 @@
         
       </tr>
     </table>
-
+<p>  </p>
 <!-- TABLE 1: Performance Verification -->
     <table>
       <tr>
@@ -250,39 +241,13 @@
 <div class="separator">
   
   <div>Remarks: </div>
-  <div><b> _________________________________________________________________</b></div>
-  <div><b> _________________________________________________________________</b></div>
-  <div><b> _________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
+  <div><b> __________________________________________________________________________________________________________________</b></div>
 </div>
 
-    <button class="save-btn" onclick="savePdfWithName()">Save as PDF</button>
+    <button class="save-btn" onclick="window.print()">Save as PDF</button>
 
   </div>
 
-  <script>
-  // Set this per machine page:
-  const MACHINE_NAME = "Lifotronics GH900"; // e.g. "SnibeM800", "GH900plus", "BC700"
-
-  function sanitizeFilename(text) {
-    return (text || "")
-      .trim()
-      .replace(/[<>:"/\\|?*\x00-\x1F]/g, "")  // remove invalid filename chars
-      .replace(/\s+/g, " ")                   // collapse spaces
-      .slice(0, 120);                         // avoid super-long names
-  }
-
-  function savePdfWithName() {
-    const clientRaw = document.getElementById("clientName").value;
-    const client = sanitizeFilename(clientRaw) || "Client";
-    const filenameBase = sanitizeFilename(`${client} ${MACHINE_NAME}`);
-
-    const oldTitle = document.title;
-    document.title = filenameBase;   // browsers often use <title> as default PDF name [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[3](https://stackoverflow.com/questions/79125728/file-name-issue-in-edge-browsers-print-dialog-feature-index-pdf)
-
-    window.print();                  // still shows print dialog (browser security) [1](https://www.xjavascript.com/blog/how-to-create-a-custom-file-name-for-a-file-while-saving-the-print-page/)[2](https://github.com/whatwg/html/issues/10612)
-
-    // Restore title after opening print dialog
-    setTimeout(() => { document.title = oldTitle; }, 500);
-  }
-</script>
 </body>
